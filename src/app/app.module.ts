@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainCardComponent } from './components/main-card/main-card.component';
 import { MaterialElevationDirective } from './directives/material-elevation.directive';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { SkillsComponent } from './components/skills/skills.component';
 @NgModule({
   declarations: [
     AppComponent,
     MainCardComponent,
     MaterialElevationDirective,
-    ExperienceComponent
+    ExperienceComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

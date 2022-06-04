@@ -23,6 +23,7 @@ export class MainCardComponent implements OnInit {
       github: "github.com/rent-a-human",
       mobile: "+573025688681",
       location: "Colombia",
+      imgUrl: "https://avatars.githubusercontent.com/u/20101141?v=4",
       workExperiences: [{
         entityName: "IGM Technology",
         period: "Oct 2021 - Present",
@@ -36,6 +37,13 @@ export class MainCardComponent implements OnInit {
         position: "Frontend Developer",
         achievements: "MS Office Add-in and biometric signature Implementations",
         logoUrl: "https://avatars.githubusercontent.com/u/83523063?v=4"
+      },
+      {
+        entityName: "Slabcode SAS",
+        period: "Feb 2021 - Present",
+        position: "Frontend Developer",
+        achievements: "",
+        logoUrl: "assets/icons/slabcode.svg"
       }],
       academicExperiences: [
         {
@@ -52,6 +60,12 @@ export class MainCardComponent implements OnInit {
           achievements: "HTML, CSS, JavaScript, Visual Basic, PHP, MySQL, MSOffice",
           logoUrl: "https://iesantateresadejesus.edu.co/wp-content/uploads/2020/05/favicon.jpg"
         }
+      ],
+      skills: [
+        { name: "Frontend", content: ["HTML", "CSS", "Javascript", "Angular", "AngularJS", "React", "Vue", "React Native" , "Typescript"] },
+        { name: "Backend", content: ["Ruby", "Java", "C#", "PHP", "C++", "Visual Basic", "NodeJS" ] },
+        { name: "UX/UI", content: ["Photoshop", "SolidWorks", "IntelliJ", "VSCode", "Figma", "Proteus"] },
+        { name: "Languages", content: ["Spanish", "English"] },
       ]
     }
   }

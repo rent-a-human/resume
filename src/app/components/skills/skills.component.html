@@ -1,0 +1,9 @@
+<mat-card-title class="skill-title">{{skill.name}}</mat-card-title>
+<mat-chip-list aria-label="Skills">
+    <mat-chip *ngFor="let element of skill.content">
+        <mat-chip-avatar>
+            <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+        </mat-chip-avatar>
+        {{element}}
+    </mat-chip>
+</mat-chip-list>

@@ -1,8 +1,7 @@
 <div class="main-div">
     <mat-card appMaterialElevation class="example-card mat-elevation-z20">
         <mat-card-header class="reg-padding">
-            <img mat-card-avatar class="header-image"
-                [src]="'https://avatars.githubusercontent.com/u/20101141?v=4'" />
+            <img mat-card-avatar class="header-image" [src]="user.imgUrl" />
             <mat-card-title>{{user.name}}</mat-card-title>
             <mat-card-subtitle>{{user.profession}}</mat-card-subtitle>
             <mat-card-subtitle>{{user.presentation}}</mat-card-subtitle>
@@ -15,28 +14,32 @@
             <button mat-button>
                 <mat-icon>call</mat-icon>
                 {{user.mobile}}
-            </button>     
+            </button>
             <button mat-button>
-                <img class="icon-img"
-                [src]="'assets/icons/github.svg'" />
+                <img class="icon-img" [src]="'assets/icons/github.svg'" />
                 {{user.github}}
-            </button>        
+            </button>
         </mat-card-actions>
         <div class="row">
             <div class="column">
-                <mat-card-title class="resume-title">Work Experiences</mat-card-title>
-                <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp"></app-experience>
-                <mat-card-title class="resume-title">Education</mat-card-title>
+                <mat-card-title class="resume-title">WORK EXPERIENCES</mat-card-title>
+                <div class="reg-spacing">
+                    <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp"></app-experience>
+                </div>
+                <mat-card-title class="resume-title">EDUCATION</mat-card-title>
                 <app-experience *ngFor="let acExp of user.academicExperiences" [experience]="acExp"></app-experience>
             </div>
             <div class="column">
-                <!-- <app-experience [experience]="user.academicExperience"></app-experience> -->
+                <mat-card-title class="resume-title">SKILLS</mat-card-title>
+                <div class="reg-spacing" *ngFor="let category of user.skills">
+                    <app-skills [skill]="category"></app-skills>
+                </div>
             </div>
         </div>
 
-        <mat-card-actions>
+        <!-- <mat-card-actions>
             <button mat-button>LIKE</button>
             <button mat-button>SHARE</button>
-        </mat-card-actions>
+        </mat-card-actions> -->
     </mat-card>
 </div>
