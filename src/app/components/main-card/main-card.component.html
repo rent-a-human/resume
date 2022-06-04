@@ -1,11 +1,39 @@
 <div class="main-div">
-    <mat-card mat-light-theme appMaterialElevation class="example-card mat-elevation-z20">
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        <mat-card-content>
-            <p>This card indeterminates progress bar.</p>
-            <p>{{longText}}</p>
-        </mat-card-content>
+    <mat-card appMaterialElevation class="example-card mat-elevation-z20">
+        <mat-card-header class="reg-padding">
+            <img mat-card-avatar class="header-image"
+                [src]="'https://avatars.githubusercontent.com/u/20101141?v=4'" />
+            <mat-card-title>{{user.name}}</mat-card-title>
+            <mat-card-subtitle>{{user.profession}}</mat-card-subtitle>
+            <mat-card-subtitle>{{user.presentation}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions class="contact-info">
+            <button mat-button>
+                <mat-icon>mail</mat-icon>
+                {{user.email}}
+            </button>
+            <button mat-button>
+                <mat-icon>call</mat-icon>
+                {{user.mobile}}
+            </button>     
+            <button mat-button>
+                <img class="icon-img"
+                [src]="'assets/icons/github.svg'" />
+                {{user.github}}
+            </button>        
+        </mat-card-actions>
+        <div class="row">
+            <div class="column">
+                <mat-card-title class="resume-title">Work Experiences</mat-card-title>
+                <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp"></app-experience>
+                <mat-card-title class="resume-title">Education</mat-card-title>
+                <app-experience *ngFor="let acExp of user.academicExperiences" [experience]="acExp"></app-experience>
+            </div>
+            <div class="column">
+                <!-- <app-experience [experience]="user.academicExperience"></app-experience> -->
+            </div>
+        </div>
+
         <mat-card-actions>
             <button mat-button>LIKE</button>
             <button mat-button>SHARE</button>
