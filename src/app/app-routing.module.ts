@@ -7,10 +7,11 @@ const routes: Routes = [
     path: '',
     component: MainCardComponent
   },
-  // {
-  //   path: 'login',
-  //   component: LoginComponent
-  // },
+  {
+    path: 'login',
+    component: MainCardComponent
+  },
+  { path: '**', redirectTo: 'login' },
   { path: 'login**', redirectTo: 'login' }
 ];
 
