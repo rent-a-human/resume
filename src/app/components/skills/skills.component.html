@@ -2,15 +2,20 @@
 <mat-chip-list aria-label="Skills">
     <mat-chip *ngFor="let element of skill.content">
         <mat-chip-avatar>
+            <img *ngIf="!element.score" src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
             <mat-progress-spinner
-                matBadge="JS"
-                matBadgeSize="small" 
-                [value]="90"
+                *ngIf="element.score"
+                matBadge="{{element.score}}"
+                matBadgeSize="small"
+                matBadgeColor="accent"
+                matTooltip="Score: {{element.score}}"
+                matTooltipShowDelay="1000"
+                [value]="element.score"
                 [diameter]="28"
                 [strokeWidth]="4"
                 (mouseenter)="changeColor()">
             </mat-progress-spinner>
         </mat-chip-avatar>
-        {{element}}
+        {{element.name}}
     </mat-chip>
 </mat-chip-list>

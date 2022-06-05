@@ -59,12 +59,59 @@ export class MainCardComponent implements OnInit {
         }
       ],
       skills: [
-        { name: "Frontend", content: ["HTML", "CSS", "Javascript", "Angular", "AngularJS", "React", "Vue", "React Native", "Typescript"] },
-        { name: "Backend", content: ["Spring Boot", "NodeJS", "Java", "C# - .NET", "PHP", "C++", "Visual Basic", "MySql", "Mongo" ] },
-        { name: "IDE's & Development Tools", content: ["GIT", "SolidWorks", "IntelliJ", "VSCode", "Autodesk", "Photoshop", "Figma", "JIRA", "Proteus", "PLC", "Arduino", "Raspberry", "CNC"] },
-        { name: "Languages", content: ["Spanish", "English"] },
+        {
+          name: "Frontend", content: [
+            { name: "HTML", score: 90 },
+            { name: "CSS", score: 90 },
+            { name: "JavaScript", score: 90 },
+            { name: "TypeScript", score: 90 },
+            { name: "Angular", score: 90 },
+            { name: "AngularJS", score: 70 },
+            { name: "React", score: 80 },
+            { name: "Vue", score: 60 },
+            { name: "React Native", score: 70 },
+          ]
+        },
+        {
+          name: "Backend", content: [
+            { name: "Spring Boot", score: 70 },
+            { name: "NodeJS", score: 70 },
+            { name: "Java", score: 60 },
+            { name: "C#-Vb.Net", score: 70 },
+            { name: "PHP", score: 70 },
+            { name: "C++", score: 70 },
+            { name: "MySQL", score: 80 },
+            { name: "Mongo", score: 60 },
+          ]
+        },
+        {
+          name: "IDE's & Development Tools", content: [
+            { name: "GIT", logoUrl: '' },
+            { name: "SolidWorks", logoUrl: '' },
+            { name: "IntelliJ", logoUrl: '' },
+            { name: "VSCode", logoUrl: '' },
+            { name: "Autodesk", logoUrl: '' },
+            { name: "Photoshop", logoUrl: '' },
+            { name: "CorelDraw", logoUrl: '' },
+            { name: "Figma", logoUrl: '' },
+            { name: "JIRA", logoUrl: '' },
+            { name: "Proteus", logoUrl: '' },
+            { name: "PLC", logoUrl: '' },
+            { name: "Arduino", logoUrl: '' },
+            { name: "Raspberry", logoUrl: '' },
+            { name: "CNC", logoUrl: '' },
+          ]
+        },
+        {
+          name: "Languages", content: [
+            { name: "Spanish", logoUrl: '' },
+            { name: "English", logoUrl: '' }
+          ]
+        },
       ]
     }
+
+    console.log(this.user)
   }
 
 }
