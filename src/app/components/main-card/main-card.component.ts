@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-card.component.less']
 })
 export class MainCardComponent implements OnInit {
-  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
-  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
-  originally bred for hunting.`;
 
   user: any;
 
@@ -55,7 +52,7 @@ export class MainCardComponent implements OnInit {
         },
         {
           entityName: "IE Santa Teresa de Jesus - CASD",
-          period: "Jan 2000 - Dec 2005",
+          period: "Jan 2003 - Dec 2005",
           position: "IT Certificate",
           achievements: "HTML, CSS, JavaScript, Visual Basic, PHP, MySQL, MSOffice",
           logoUrl: "https://iesantateresadejesus.edu.co/wp-content/uploads/2020/05/favicon.jpg"
@@ -63,8 +60,8 @@ export class MainCardComponent implements OnInit {
       ],
       skills: [
         { name: "Frontend", content: ["HTML", "CSS", "Javascript", "Angular", "AngularJS", "React", "Vue", "React Native", "Typescript"] },
-        { name: "Backend", content: ["Spring Boot", "NodeJS", "Java", "C#", "PHP", "C++", "Visual Basic", "MySql", "Mongo" ] },
-        { name: "Design", content: ["Photoshop", "SolidWorks", "IntelliJ", "VSCode", "Figma", "Proteus"] },
+        { name: "Backend", content: ["Spring Boot", "NodeJS", "Java", "C# - .NET", "PHP", "C++", "Visual Basic", "MySql", "Mongo" ] },
+        { name: "IDE's & Development Tools", content: ["GIT", "SolidWorks", "IntelliJ", "VSCode", "Autodesk", "Photoshop", "Figma", "JIRA", "Proteus", "PLC", "Arduino", "Raspberry", "CNC"] },
         { name: "Languages", content: ["Spanish", "English"] },
       ]
     }

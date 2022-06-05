@@ -2,7 +2,14 @@
 <mat-chip-list aria-label="Skills">
     <mat-chip *ngFor="let element of skill.content">
         <mat-chip-avatar>
-            <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+            <mat-progress-spinner
+                matBadge="JS"
+                matBadgeSize="small" 
+                [value]="90"
+                [diameter]="28"
+                [strokeWidth]="4"
+                (mouseenter)="changeColor()">
+            </mat-progress-spinner>
         </mat-chip-avatar>
         {{element}}
     </mat-chip>
