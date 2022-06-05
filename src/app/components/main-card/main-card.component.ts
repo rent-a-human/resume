@@ -86,26 +86,24 @@ export class MainCardComponent implements OnInit {
         },
         {
           name: "IDE's & Development Tools", content: [
-            { name: "GIT", logoUrl: '' },
-            { name: "SolidWorks", logoUrl: '' },
-            { name: "IntelliJ", logoUrl: '' },
-            { name: "VSCode", logoUrl: '' },
-            { name: "Autodesk", logoUrl: '' },
-            { name: "Photoshop", logoUrl: '' },
-            { name: "CorelDraw", logoUrl: '' },
-            { name: "Figma", logoUrl: '' },
-            { name: "JIRA", logoUrl: '' },
-            { name: "Proteus", logoUrl: '' },
-            { name: "PLC", logoUrl: '' },
-            { name: "Arduino", logoUrl: '' },
-            { name: "Raspberry", logoUrl: '' },
-            { name: "CNC", logoUrl: '' },
+            { name: "GIT", logoUrl: 'assets/icons/git.svg' },
+            { name: "SolidWorks", logoUrl: 'assets/icons/sw.svg' },
+            { name: "IntelliJ", logoUrl: 'assets/icons/intellij.svg' },
+            { name: "VSCode", logoUrl: 'assets/icons/vscode.svg' },
+            { name: "Autodesk", logoUrl: 'assets/icons/inventor.svg' },
+            { name: "Photoshop", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg' },
+            { name: "Figma", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' },
+            { name: "JIRA", logoUrl: 'assets/icons/jira.svg' },
+            { name: "Proteus", logoUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Proteus_Design_Suite_Atom_Logo.png/172px-Proteus_Design_Suite_Atom_Logo.png' },
+            { name: "Arduino", logoUrl: 'assets/icons/arduino.svg' },
+            { name: "Raspberry", logoUrl: 'assets/icons/raspberry.png' },
+            { name: "Blender", logoUrl: 'assets/icons/blender.svg' }
           ]
         },
         {
           name: "Languages", content: [
-            { name: "Spanish", logoUrl: '' },
-            { name: "English", logoUrl: '' }
+            { name: "Spanish", score: 100 },
+            { name: "English", score: 90 }
           ]
         },
       ]

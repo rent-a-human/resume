@@ -2,7 +2,7 @@
 <mat-chip-list aria-label="Skills">
     <mat-chip *ngFor="let element of skill.content">
         <mat-chip-avatar>
-            <img *ngIf="!element.score" src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+            <img *ngIf="!element.score" class="skill-image" src="{{element.logoUrl}}" alt="{{element.name}}" />
             <mat-progress-spinner
                 *ngIf="element.score"
                 matBadge="{{element.score}}"
