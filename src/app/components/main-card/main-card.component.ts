@@ -18,7 +18,7 @@ export class MainCardComponent implements OnInit {
     this.user = {
       name: 'John Lenin Ortiz Gamba',
       profession: "Web/App Developer & Engineer",
-      presentation: "Bilingual professional (Spanish, English) with experience and skills in frontend & backend development, oil well drilling, pumping equipment, 3D modeling and printing, industrial automation, manufacturing and electronics. Passionate about developing prototypes, algorithms, applications and new products.",
+      presentation: "Software Developer with experience in Frontend and Backend Frameworks, 3D modeling & animation, industrial automation, oil well drilling planning & equipment, Robotics and Electronics. Passionate about developing prototypes, applications and using state-of-the-art technologies.",
       email: "lenincomp@gmail.com",
       github: "github.com/rent-a-human",
       mobile: "+573025688681",
@@ -28,21 +28,21 @@ export class MainCardComponent implements OnInit {
         entityName: "IGM Technology",
         period: "Oct 2021 - Present",
         position: "Tech Lead Developer",
-        achievements: "Full migration of legacy angularJS app to Angular Material",
+        achievements: "Full migration of legacy frontend angularJS application to Angular2+ Material",
         logoUrl: "https://avatars.githubusercontent.com/u/6602522?s=200&v=4"
       },
       {
         entityName: "Olimpia SAS - MiFirma",
         period: "Feb 2021 - Sep 2021",
         position: "Frontend Developer",
-        achievements: "MS Office Add-in and biometric signature Implementations",
+        achievements: "MS Office NodeJS Add-in and biometric signature implementations with Angular",
         logoUrl: "https://avatars.githubusercontent.com/u/83523063?v=4"
       },
       {
         entityName: "Slabcode SAS",
         period: "Feb 2021 - Present",
         position: "Frontend Developer",
-        achievements: "",
+        achievements: "Built stable and maintanable web solutions using React, Angular and Vanilla Javascript",
         logoUrl: "assets/icons/slabcode.svg"
       }],
       academicExperiences: [
@@ -50,7 +50,7 @@ export class MainCardComponent implements OnInit {
           entityName: "Universidad Simon Bolivar",
           period: "Sep 2010 - Jun 2016",
           position: "Mechanical Engineer",
-          achievements: "Design and fabrication of a solar parabolic dish for adapting to a solar stirling engine",
+          achievements: "Design and fabrication of a solar-tracker parabolic dish for adapting to a stirling engine",
           logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/USB_logo.svg/1920px-USB_logo.svg.png"
         },
         {
@@ -62,9 +62,9 @@ export class MainCardComponent implements OnInit {
         }
       ],
       skills: [
-        { name: "Frontend", content: ["HTML", "CSS", "Javascript", "Angular", "AngularJS", "React", "Vue", "React Native" , "Typescript"] },
-        { name: "Backend", content: ["Ruby", "Java", "C#", "PHP", "C++", "Visual Basic", "NodeJS" ] },
-        { name: "UX/UI", content: ["Photoshop", "SolidWorks", "IntelliJ", "VSCode", "Figma", "Proteus"] },
+        { name: "Frontend", content: ["HTML", "CSS", "Javascript", "Angular", "AngularJS", "React", "Vue", "React Native", "Typescript"] },
+        { name: "Backend", content: ["Spring Boot", "NodeJS", "Java", "C#", "PHP", "C++", "Visual Basic", "MySql", "Mongo" ] },
+        { name: "Design", content: ["Photoshop", "SolidWorks", "IntelliJ", "VSCode", "Figma", "Proteus"] },
         { name: "Languages", content: ["Spanish", "English"] },
       ]
     }
