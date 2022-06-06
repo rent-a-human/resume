@@ -9,9 +9,8 @@
   }
 
   .resume-title {
-    padding: 6px 0;
     font-size: large;
-    color:teal;
+    color: teal;
   }
 
   .example-card {
@@ -58,3 +57,47 @@
   padding: 12px 0;
 }
 
+::ng-deep .mat-card-header .mat-card-title {
+  margin-bottom: 10px !important;
+}
+
+.user-title, .resume-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .edit-button {
+    position: relative;
+    top: -8px;
+
+    .mat-icon-button {
+      background-color: aliceblue;
+      height: 30px;
+      width: 30px;
+      vertical-align: unset;
+      line-height: 20px;
+    }
+
+    .mat-icon {
+      font-size: large;
+    }
+  }
+
+  .add-button {
+    position: relative;
+    top: -2px;
+    left: 6px;
+
+    .mat-icon-button {
+      background-color: whitesmoke;
+      height: 30px;
+      width: 30px;
+      vertical-align: unset;
+      line-height: 20px;
+    }
+
+    .mat-icon {
+      font-size: x-large;
+    }
+  }
+}

@@ -1,21 +1,64 @@
 <mat-card-title class="skill-title">{{skill.name}}</mat-card-title>
-<mat-chip-list aria-label="Skills">
-    <mat-chip *ngFor="let element of skill.content">
+<mat-chip-list cdkDropList cdkDropListOrientation="vertical" (cdkDropListDropped)="drop($event)" aria-label="Skills">
+    <mat-chip cdkDrag *ngFor="let element of skill.content" [matMenuTriggerFor]="addmenu" #addMenu="matMenuTrigger"
+        [matMenuTriggerData]="{element:element}">
         <mat-chip-avatar>
             <img *ngIf="!element.score" class="skill-image" src="{{element.logoUrl}}" alt="{{element.name}}" />
-            <mat-progress-spinner
-                *ngIf="element.score"
-                matBadge="{{element.score}}"
-                matBadgeSize="small"
-                matBadgeColor="accent"
-                matTooltip="Score: {{element.score}}"
-                matTooltipShowDelay="1000"
-                [value]="element.score"
-                [diameter]="28"
-                [strokeWidth]="4"
-                (mouseenter)="changeColor()">
+            <mat-progress-spinner *ngIf="element.score" matBadge="{{element.score}}" matBadgeSize="small"
+                matBadgeColor="accent" matTooltip="Score: {{element.score}}" matTooltipShowDelay="1000"
+                [value]="element.score" [diameter]="28" [strokeWidth]="4" (mouseenter)="changeColor()">
             </mat-progress-spinner>
         </mat-chip-avatar>
         {{element.name}}
     </mat-chip>
+    <mat-chip class="noprint" *ngIf="editmode" [matMenuTriggerFor]="addmenu" #addMenu="matMenuTrigger">
+        <mat-icon>add</mat-icon>
+    </mat-chip>
 </mat-chip-list>
+
+<mat-menu #addmenu="matMenu">
+    <ng-template matMenuContent let-element="element">
+        <div class="context-menu" *ngIf="element" (click)="captureEvent($event)">
+            <mat-form-field class="add-skill" appearance="outline">
+                <mat-label>Skill Name</mat-label>
+                <input matInput type="text" [(ngModel)]="element.name" (click)="captureEvent($event)">
+            </mat-form-field>
+
+            <mat-form-field class="add-skill" appearance="outline">
+                <mat-label>{{skill.type === 'score' ? 'Score' : "Image URL"}}</mat-label>
+                <input matInput *ngIf="skill.type === 'score'" type="number" min="0" max="100" [(ngModel)]="element.score"
+                    (click)="captureEvent($event)">
+                <input matInput *ngIf="skill.type === 'image'" type="text" [(ngModel)]="element.logoUrl"
+                    (click)="captureEvent($event)">
+            </mat-form-field>
+            <div class="spaced">
+                <button mat-icon-button aria-label="Save" (click)="dismiss()">
+                    <mat-icon matTooltip="Save" matTooltipShowDelay="1000" class="aprove">done</mat-icon>
+                </button>
+                <button mat-icon-button aria-label="Remove" (click)="deleteSkill(element)">
+                    <mat-icon matTooltip="Delete" matTooltipShowDelay="1000" color="warn">close</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="context-menu" *ngIf="!element" (click)="captureEvent($event)">
+            <mat-form-field class="add-skill" appearance="outline">
+                <mat-label>Skill Name</mat-label>
+                <input matInput type="text" [(ngModel)]="newSkill" (click)="captureEvent($event)">
+            </mat-form-field>
+
+            <mat-form-field class="add-skill" appearance="outline">
+                <mat-label>{{skill.type === 'score' ? 'Score' : "Image URL"}}</mat-label>
+                <input matInput *ngIf="skill.type === 'score'" type="number" min="0" max="100" [(ngModel)]="newScore" (click)="captureEvent($event)">
+                <input matInput *ngIf="skill.type === 'image'" type="text" [(ngModel)]="newUrl" (click)="captureEvent($event)">
+            </mat-form-field>
+            <div class="spaced">
+                <button mat-icon-button aria-label="Save" (click)="addSkill()">
+                    <mat-icon matTooltip="Save" matTooltipShowDelay="1000" class="aprove">done</mat-icon>
+                </button>
+                <button mat-icon-button aria-label="Remove" (click)="dismiss()">
+                    <mat-icon matTooltip="Delete" matTooltipShowDelay="1000" color="warn">close</mat-icon>
+                </button>
+            </div>
+        </div>
+    </ng-template>
+</mat-menu>

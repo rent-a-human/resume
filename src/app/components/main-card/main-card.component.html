@@ -2,7 +2,13 @@
     <mat-card appMaterialElevation class="example-card mat-elevation-z20">
         <mat-card-header class="reg-padding">
             <img mat-card-avatar class="header-image mat-elevation-z8" [src]="user.imgUrl" />
-            <mat-card-title>{{user.name}}</mat-card-title>
+            <mat-card-title class="user-title">{{user.name}}
+                <div class="edit-button noprint">
+                    <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
+                        <mat-icon>drive_file_rename_outline</mat-icon>
+                    </button>
+                </div>
+            </mat-card-title>
             <mat-card-subtitle>{{user.profession}}</mat-card-subtitle>
             <mat-card-subtitle>{{user.presentation}}</mat-card-subtitle>
         </mat-card-header>
@@ -30,24 +36,33 @@
         </mat-card-actions>
         <div class="row">
             <div class="column">
-                <mat-card-title class="resume-title">WORK EXPERIENCES</mat-card-title>
+                <mat-card-title class="resume-title">WORK EXPERIENCES<div class="add-button noprint">
+                    <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </div></mat-card-title>
                 <div class="reg-spacing">
                     <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp"></app-experience>
                 </div>
-                <mat-card-title class="resume-title">EDUCATION</mat-card-title>
+                <mat-card-title class="resume-title">EDUCATION<div class="add-button noprint">
+                    <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </div></mat-card-title>
                 <app-experience *ngFor="let acExp of user.academicExperiences" [experience]="acExp"></app-experience>
             </div>
             <div class="column">
                 <mat-card-title class="resume-title">SKILLS</mat-card-title>
                 <div class="reg-spacing" *ngFor="let category of user.skills">
-                    <app-skills [skill]="category"></app-skills>
+                    <app-skills [skill]="category" [editmode]="editmode" (triggerSave)="saveData()"></app-skills>
                 </div>
             </div>
         </div>
 
-        <!-- <mat-card-actions>
+        <mat-card-actions class="noprint">
             <button mat-button>LIKE</button>
             <button mat-button>SHARE</button>
-        </mat-card-actions> -->
+            <mat-slide-toggle [(ngModel)]="editmode">Edit mode</mat-slide-toggle>
+        </mat-card-actions>
     </mat-card>
 </div>
