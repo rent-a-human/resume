@@ -18,4 +18,8 @@ export class WelcomeComponent implements OnInit {
     this.router.navigate([`/users/${this.username}`]);
   }
 
+  redirect() {
+    this.router.navigate([`/users/john`]);
+  }
+
 }

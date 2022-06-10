@@ -150,7 +150,7 @@ export class MainCardComponent implements OnInit {
   }
 
   currentUrl() {
-    return window.location.origin + window.location.pathname;
+    return window.location.origin;
   }
 
   saveChanges(attribute: any) {
