@@ -51,7 +51,8 @@
                     </div>
                 </mat-card-title>
                 <div class="reg-spacing">
-                    <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp" [editmode]="editmode"></app-experience>
+                    <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp" [editmode]="editmode">
+                    </app-experience>
                 </div>
                 <mat-card-title class="resume-title">EDUCATION<div class="add-button noprint">
                         <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
@@ -59,7 +60,8 @@
                         </button>
                     </div>
                 </mat-card-title>
-                <app-experience *ngFor="let acExp of user.academicExperiences" [experience]="acExp" [editmode]="editmode"></app-experience>
+                <app-experience *ngFor="let acExp of user.academicExperiences" [experience]="acExp"
+                    [editmode]="editmode"></app-experience>
             </div>
             <div class="column">
                 <mat-card-title class="resume-title">SKILLS</mat-card-title>
@@ -69,10 +71,9 @@
             </div>
         </div>
 
-        <mat-card-actions class="noprint">
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-            <mat-slide-toggle [(ngModel)]="editmode">Edit mode</mat-slide-toggle>
+        <mat-card-actions class="align-right">
+            <div class="reg-padding"> Made with <a href="{{currentUrl()}}">{{currentUrl()}}</a></div>
+            <mat-slide-toggle class="noprint" [(ngModel)]="editmode">Edit mode</mat-slide-toggle>
         </mat-card-actions>
     </mat-card>
 </div>
