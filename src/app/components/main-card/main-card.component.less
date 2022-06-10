@@ -4,6 +4,19 @@
   align-items: center;
   padding: 16px;
 
+  .bgbutton {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 10000;
+    button {
+      background-color: white;
+    }
+    button:hover {
+      background-color: darkslategrey;
+    }
+  }
+
   a {
     color: darkslategrey;
   }
@@ -11,10 +24,24 @@
   .resume-title {
     font-size: large;
     color: teal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .profile-button {
+      position: relative;
+      top: -8px;
+    }
+  
+    .add-button {
+      position: relative;
+      top: -2px;
+      left: 12px;
+    }
   }
 
-  .example-card {
+  .main-card {
     width: 100%;
+    background-size: cover;
   }
 
   .icon-img {
@@ -25,6 +52,7 @@
   .contact-info {
     background-color: lightgray;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -46,7 +74,7 @@
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
-  padding: 10px;
+  padding: 16px;
 }
 
 .reg-padding {
@@ -61,26 +89,15 @@
   margin-bottom: 10px !important;
 }
 
-.user-title, .resume-title {
+.user-title {
+  margin-top: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  .edit-button {
+  .profile-button {
     position: relative;
     top: -8px;
-
-    .mat-icon-button {
-      background-color: aliceblue;
-      height: 30px;
-      width: 30px;
-      vertical-align: unset;
-      line-height: 20px;
-    }
-
-    .mat-icon {
-      font-size: large;
-    }
   }
 
   .add-button {
@@ -100,4 +117,16 @@
       font-size: x-large;
     }
   }
+}
+
+.mat-icon-button {
+  background-color: aliceblue;
+  height: 30px;
+  width: 30px;
+  vertical-align: unset;
+  line-height: 20px;
+}
+
+.mat-icon {
+  font-size: large;
 }

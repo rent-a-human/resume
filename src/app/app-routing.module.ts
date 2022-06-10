@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainCardComponent } from './components/main-card/main-card.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainCardComponent
+    component: WelcomeComponent
   },
   {
-    path: 'login',
+    path: 'users/:username',
     component: MainCardComponent
   },
   { path: '**', redirectTo: 'login' },

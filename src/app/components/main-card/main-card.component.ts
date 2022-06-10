@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material/menu';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-main-card',
@@ -6,61 +8,77 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-card.component.less']
 })
 export class MainCardComponent implements OnInit {
+  @ViewChild("editMenu") editMenu!: MatMenuTrigger;
+  @ViewChild("editBGMenu") editBGMenu!: MatMenuTrigger;
+  public username!: string | null;
   editmode = true;
   user: any;
+  imagesURLs!: any[];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.imagesURLs = [
+      { field: 'BackgroundURL', value: 'https://i.pinimg.com/originals/85/ad/c3/85adc3bfcb71282a1da80f30eb902395.png' },
+      { field: 'BackgroundURL', value: 'https://www.pikpng.com/pngl/b/45-456227_transparent-black-border-border-clipart-education-black-and.png' },
+      { field: 'BackgroundURL', value: 'https://i.pinimg.com/564x/06/f9/c3/06f9c329fdade1424131af26fc1f96b1.jpg' },
+    ]
+    this.username = this.route.snapshot.paramMap.get('username');
     const userData = localStorage.getItem('user-data');
-    if(userData) {
+    if (userData) {
       this.user = JSON.parse(userData);
     } else {
       this.user = {
-        name: 'John Lenin Ortiz Gamba',
-        profession: "Web/App Developer & Engineer",
-        presentation: "Software Developer with experience in Frontend and Backend Frameworks, 3D modeling & animation, industrial automation, oil well drilling planning & equipment, Robotics and Electronics. Passionate about developing prototypes, applications and using state-of-the-art technologies.",
+        templateSettings: [
+          { field: 'BackgroundURL', value: 'https://www.pikpng.com/pngl/b/45-456227_transparent-black-border-border-clipart-education-black-and.png' }
+        ],
+        presentation: [
+          { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
+          { field: 'Name', value: 'John Lenin Ortiz Gamba' },
+          { field: 'Profession', value: "Web/App Developer & Engineer" },
+          { field: 'Presentation', value: "Software Developer with experience in Frontend and Backend Frameworks, 3D modeling & animation, industrial automation, oil well drilling planning & equipment, Robotics and Electronics. Passionate about developing prototypes, applications and using state-of-the-art technologies." }
+        ],
         email: "lenincomp@gmail.com",
         github: "github.com/rent-a-human",
         mobile: "+573025688681",
         location: "Colombia",
-        imgUrl: "https://avatars.githubusercontent.com/u/20101141?v=4",
-        workExperiences: [{
-          entityName: "IGM Technology",
-          period: "Oct 2021 - Present",
-          position: "Tech Lead Developer",
-          achievements: "Full migration of legacy frontend angularJS application to Angular2+ Material",
-          logoUrl: "https://avatars.githubusercontent.com/u/6602522?s=200&v=4"
-        },
-        {
-          entityName: "Olimpia SAS - MiFirma",
-          period: "Feb 2021 - Sep 2021",
-          position: "Frontend Developer",
-          achievements: "MS Office NodeJS Add-in and biometric signature implementations with Angular",
-          logoUrl: "https://avatars.githubusercontent.com/u/83523063?v=4"
-        },
-        {
-          entityName: "Slabcode SAS",
-          period: "Feb 2021 - Present",
-          position: "Frontend Developer",
-          achievements: "Built stable and maintanable web solutions using React, Angular and Vanilla Javascript",
-          logoUrl: "assets/icons/slabcode.svg"
-        }],
+        workExperiences: [[
+          { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/6602522?s=200&v=4' },
+          { field: 'CompanyName', value: 'IGM Technology' },
+          { field: 'Period', value: 'Oct 2021 - Present' },
+          { field: 'Position', value: 'Tech Lead Developer' },
+          { field: 'Achievements', value: 'Full migration of legacy frontend angularJS application to Angular2+ Material' }
+        ],
+        [
+          { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/83523063?v=4' },
+          { field: 'CompanyName', value: 'Olimpia SAS - MiFirma' },
+          { field: 'Period', value: 'Feb 2021 - Sep 2021' },
+          { field: 'Position', value: 'Frontend Developer' },
+          { field: 'Achievements', value: 'MS Office NodeJS Add-in and biometric signature implementations with Angular' }
+        ],
+        [
+          { field: 'CompanyLogoUrl', value: 'assets/icons/slabcode.svg' },
+          { field: 'CompanyName', value: 'Slabcode SAS' },
+          { field: 'Period', value: 'Feb 2021 - Present' },
+          { field: 'Position', value: 'Frontend Developer' },
+          { field: 'Achievements', value: 'Built and maintain clients web solutions using React, Angular and Vanilla Javascript' }
+        ],
+        ],
         academicExperiences: [
-          {
-            entityName: "Universidad Simon Bolivar",
-            period: "Sep 2010 - Jun 2016",
-            position: "Mechanical Engineer",
-            achievements: "Design and fabrication of a solar-tracker parabolic dish for adapting to a stirling engine",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/USB_logo.svg/1920px-USB_logo.svg.png"
-          },
-          {
-            entityName: "IE Santa Teresa de Jesus - CASD",
-            period: "Jan 2003 - Dec 2005",
-            position: "IT Certificate",
-            achievements: "HTML, CSS, JavaScript, Visual Basic, PHP, MySQL, MSOffice",
-            logoUrl: "https://iesantateresadejesus.edu.co/wp-content/uploads/2020/05/favicon.jpg"
-          }
+          [
+            { field: 'InstitutionLogoUrl', value: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/USB_logo.svg/1920px-USB_logo.svg.png' },
+            { field: 'InstitutionName', value: 'Universidad Simon Bolivar' },
+            { field: 'Period', value: 'Sep 2010 - Jun 2016' },
+            { field: 'DegreeAcquired', value: 'Mechanical Engineer' },
+            { field: 'Achievements', value: 'Design and fabrication of a solar-tracker parabolic dish for adapting to a stirling engine' }
+          ],
+          [
+            { field: 'InstitutionLogoUrl', value: 'https://iesantateresadejesus.edu.co/wp-content/uploads/2020/05/favicon.jpg' },
+            { field: 'InstitutionName', value: 'IE Santa Teresa de Jesus - CASD' },
+            { field: 'Period', value: 'Jan 2003 - Dec 2005' },
+            { field: 'DegreeAcquired', value: 'IT Certificate' },
+            { field: 'Achievements', value: 'HTML, CSS, JavaScript, Visual Basic, PHP, MySQL, MSOffice' }
+          ]
         ],
         skills: [
           {
@@ -114,13 +132,30 @@ export class MainCardComponent implements OnInit {
       }
       this.saveData();
     }
-    
-    console.log(this.user)
+
+    console.log(this.user.presentation)
 
   }
 
   saveData() {
     localStorage.setItem('user-data', JSON.stringify(this.user));
+  }
+
+  dismiss() {
+    this.editMenu.closeMenu();
+  }
+
+  clearField() {
+
+  }
+
+  saveChanges(attribute: any) {
+    this.saveData();
+    this.dismiss();
+  }
+
+  captureEvent(event: any) {
+    event.stopPropagation();
   }
 
 }

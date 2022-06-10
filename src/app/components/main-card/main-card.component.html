@@ -1,16 +1,24 @@
 <div class="main-div">
-    <mat-card appMaterialElevation class="example-card mat-elevation-z20">
+    <mat-card appMaterialElevation class="main-card mat-elevation-z20"
+        style="background-image: url({{user.templateSettings[0].value}})">
+        <div class="noprint bgbutton">
+            <button mat-icon-button *ngIf="editmode" class="mat-elevation-z8" [matMenuTriggerFor]="editmenu"
+                [matMenuTriggerData]="{attributes: user.templateSettings}" #editMenu="matMenuTrigger">
+                <mat-icon>edit</mat-icon>
+            </button>
+        </div>
         <mat-card-header class="reg-padding">
-            <img mat-card-avatar class="header-image mat-elevation-z8" [src]="user.imgUrl" />
-            <mat-card-title class="user-title">{{user.name}}
-                <div class="edit-button noprint">
-                    <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
-                        <mat-icon>drive_file_rename_outline</mat-icon>
+            <img mat-card-avatar class="header-image mat-elevation-z8" [src]="user.presentation[0].value" />
+            <mat-card-title class="user-title">{{user.presentation[1].value}}
+                <div class="profile-button noprint">
+                    <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4" [matMenuTriggerFor]="editmenu"
+                        [matMenuTriggerData]="{attributes: user.presentation}" #editMenu="matMenuTrigger">
+                        <mat-icon>edit</mat-icon>
                     </button>
                 </div>
             </mat-card-title>
-            <mat-card-subtitle>{{user.profession}}</mat-card-subtitle>
-            <mat-card-subtitle>{{user.presentation}}</mat-card-subtitle>
+            <mat-card-subtitle>{{user.presentation[2].value}}</mat-card-subtitle>
+            <mat-card-subtitle>{{user.presentation[3].value}}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-actions class="contact-info">
             <a href="mailto:{{user.email}}">
@@ -37,19 +45,21 @@
         <div class="row">
             <div class="column">
                 <mat-card-title class="resume-title">WORK EXPERIENCES<div class="add-button noprint">
-                    <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
-                        <mat-icon>add</mat-icon>
-                    </button>
-                </div></mat-card-title>
+                        <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
+                            <mat-icon>add</mat-icon>
+                        </button>
+                    </div>
+                </mat-card-title>
                 <div class="reg-spacing">
-                    <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp"></app-experience>
+                    <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp" [editmode]="editmode"></app-experience>
                 </div>
                 <mat-card-title class="resume-title">EDUCATION<div class="add-button noprint">
-                    <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
-                        <mat-icon>add</mat-icon>
-                    </button>
-                </div></mat-card-title>
-                <app-experience *ngFor="let acExp of user.academicExperiences" [experience]="acExp"></app-experience>
+                        <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
+                            <mat-icon>add</mat-icon>
+                        </button>
+                    </div>
+                </mat-card-title>
+                <app-experience *ngFor="let acExp of user.academicExperiences" [experience]="acExp" [editmode]="editmode"></app-experience>
             </div>
             <div class="column">
                 <mat-card-title class="resume-title">SKILLS</mat-card-title>
@@ -66,3 +76,31 @@
         </mat-card-actions>
     </mat-card>
 </div>
+
+<mat-menu #editmenu="matMenu">
+    <ng-template matMenuContent let-attributes="attributes">
+        <div class="context-menu" *ngIf="attributes" (click)="captureEvent($event)">
+            <div *ngFor="let attribute of attributes">
+                <mat-form-field class="context-input" appearance="outline" *ngIf="attribute.value.length <= 50">
+                    <mat-label>{{attribute.field}}</mat-label>
+                    <input matInput type="text" [(ngModel)]="attribute.value" (click)="captureEvent($event)">
+                </mat-form-field>
+
+                <mat-form-field class="context-input" appearance="outline" *ngIf="attribute.value.length > 50">
+                    <mat-label>{{attribute.field}}</mat-label>
+                    <textarea matInput [(ngModel)]="attribute.value" cdkTextareaAutosize #autosize="cdkTextareaAutosize"
+                        cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
+                </mat-form-field>
+            </div>
+            <div class="spaced">
+                <button mat-icon-button aria-label="Save" (click)="saveChanges(attributes)">
+                    <mat-icon matTooltip="Save" matTooltipShowDelay="1000" class="aprove">done</mat-icon>
+                </button>
+                <button mat-icon-button aria-label="Remove" (click)="dismiss()">
+                    <mat-icon matTooltip="Discart" matTooltipShowDelay="1000" color="warn">close</mat-icon>
+                </button>
+            </div>
+
+        </div>
+    </ng-template>
+</mat-menu>
