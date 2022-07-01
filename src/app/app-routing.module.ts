@@ -6,7 +6,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 const routes: Routes = [
   {
     path: '',
-    component: WelcomeComponent
+    component: MainCardComponent
   },
   {
     path: 'users/:username',
