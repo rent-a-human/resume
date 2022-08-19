@@ -47,21 +47,21 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'IGM Technology' },
           { field: 'Period', value: 'Oct 2021 - Present' },
           { field: 'Position', value: 'Tech Lead Developer' },
-          { field: 'Achievements', value: 'Full migration of legacy frontend angularJS application to Angular2+ Material' }
+          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Implemented full migration of legacy frontend angularJS application to Angular2+ Material' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/83523063?v=4' },
           { field: 'CompanyName', value: 'Olimpia SAS - MiFirma' },
           { field: 'Period', value: 'Feb 2021 - Sep 2021' },
           { field: 'Position', value: 'Frontend Developer' },
-          { field: 'Achievements', value: 'MS Office NodeJS Add-in and biometric signature implementations with Angular' }
+          { field: 'Achievements', value: 'Project: MiFirma: MiFirma\'s Office Add-in (NodeJS) and MiFirma: Biometric Signature for PDF documents (Angular + .net Core).' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/icons/slabcode.svg' },
           { field: 'CompanyName', value: 'Slabcode SAS' },
           { field: 'Period', value: 'Feb 2021 - Present' },
           { field: 'Position', value: 'Frontend Developer' },
-          { field: 'Achievements', value: 'Built and maintain clients web solutions using React, Angular and Vanilla Javascript' }
+          { field: 'Achievements', value: 'Built and maintain clients web solutions (React, Angular, Javascript)' }
         ],
         ],
         academicExperiences: [
@@ -70,7 +70,7 @@ export class MainCardComponent implements OnInit {
             { field: 'InstitutionName', value: 'Universidad Simon Bolivar' },
             { field: 'Period', value: 'Sep 2010 - Jun 2016' },
             { field: 'DegreeAcquired', value: 'Mechanical Engineer' },
-            { field: 'Achievements', value: 'Design and fabrication of a solar-tracker parabolic dish for adapting to a stirling engine' }
+            { field: 'Achievements', value: 'Design and manufacture of a parabolic solar tracking dish and its coupling with a Stirling engine to harness solar energy.' }
           ],
           [
             { field: 'InstitutionLogoUrl', value: 'https://iesantateresadejesus.edu.co/wp-content/uploads/2020/05/favicon.jpg' },
