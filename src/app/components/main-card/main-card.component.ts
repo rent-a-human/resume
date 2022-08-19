@@ -63,13 +63,20 @@ export class MainCardComponent implements OnInit {
           { field: 'Position', value: 'Frontend Developer' },
           { field: 'Achievements', value: 'Built and maintain clients web solutions (React, Angular, Javascript)' }
         ],
+        [
+          { field: 'CompanyLogoUrl', value: 'assets/img/tera-logo.jpeg' },
+          { field: 'CompanyName', value: 'IngeProyectos TERA' },
+          { field: 'Period', value: 'Sep 2016 - Jan 2021' },
+          { field: 'Position', value: 'Product Development Engineer' },
+          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, development and manufacturing of mechanical ventilators for patients with COVID type respiratory crisis , machines to fold and unfold fabrics, CAD & CAM design and manufacturing, 3D modeling and printing, landing pages and e-shops for various companies.' }
+        ],
         ],
         academicExperiences: [
           [
             { field: 'InstitutionLogoUrl', value: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/USB_logo.svg/1920px-USB_logo.svg.png' },
             { field: 'InstitutionName', value: 'Universidad Simon Bolivar' },
             { field: 'Period', value: 'Sep 2010 - Jun 2016' },
-            { field: 'DegreeAcquired', value: 'Mechanical Engineer' },
+            { field: 'DegreeAcquired', value: 'BS in Mechanical Engineering' },
             { field: 'Achievements', value: 'Design and manufacture of a parabolic solar tracking dish and its coupling with a Stirling engine to harness solar energy.' }
           ],
           [
