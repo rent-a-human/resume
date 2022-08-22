@@ -54,6 +54,8 @@
                     <app-experience *ngFor="let exp of user.workExperiences" [experience]="exp" [editmode]="editmode">
                     </app-experience>
                 </div>
+            </div>
+            <div class="column">
                 <mat-card-title class="resume-title">EDUCATION<div class="add-button noprint">
                         <button mat-icon-button *ngIf="editmode" class="mat-elevation-z4">
                             <mat-icon>add</mat-icon>
@@ -62,8 +64,6 @@
                 </mat-card-title>
                 <app-experience *ngFor="let acExp of user.academicExperiences" [experience]="acExp"
                     [editmode]="editmode"></app-experience>
-            </div>
-            <div class="column">
                 <mat-card-title class="resume-title">SKILLS</mat-card-title>
                 <div class="reg-spacing" *ngFor="let category of user.skills">
                     <app-skills [skill]="category" [editmode]="editmode" (triggerSave)="saveData()"></app-skills>

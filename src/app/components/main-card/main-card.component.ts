@@ -70,6 +70,13 @@ export class MainCardComponent implements OnInit {
           { field: 'Position', value: 'Product Development Engineer' },
           { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, development and manufacturing of mechanical ventilators for patients with COVID type respiratory crisis , machines to fold and unfold fabrics, CAD & CAM design and manufacturing, 3D modeling and printing, landing pages and e-shops for various companies.' }
         ],
+        [
+          { field: 'CompanyLogoUrl', value: 'assets/img/freelance.png' },
+          { field: 'CompanyName', value: 'Freelance' },
+          { field: 'Period', value: 'Feb 2006 - Oct 2009' },
+          { field: 'Position', value: 'Other' },
+          { field: 'Achievements', value: 'Build and mantain PHP based websites. Build Wordpress & PrestaShop landing pages. Developed desktop data base systems using MS Access. Taught English and systems private lessons. Help students developing academic projects.' }
+        ],
         ],
         academicExperiences: [
           [
