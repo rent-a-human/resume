@@ -24,7 +24,7 @@ export class MainCardComponent implements OnInit {
       { field: 'BackgroundURL', value: 'https://i.pinimg.com/564x/06/f9/c3/06f9c329fdade1424131af26fc1f96b1.jpg' },
     ]
     this.username = this.route.snapshot.paramMap.get('username');
-    const userData = localStorage.getItem('user-data');
+    const userData = null;//localStorage.getItem('user-data');
     if (userData) {
       this.user = JSON.parse(userData);
     } else {
@@ -68,7 +68,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'IngeProyectos TERA' },
           { field: 'Period', value: 'Sep 2016 - Jan 2021' },
           { field: 'Position', value: 'Product Development Engineer' },
-          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, development and manufacturing of mechanical ventilators for patients with COVID type respiratory crisis , machines to fold and unfold fabrics, CAD & CAM design and manufacturing, 3D modeling and printing, landing pages and e-shops for various companies.' }
+          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, mechanical ventilators for patients with COVID type respiratory crisis, machines to fold and unfold fabrics, CAD & CAM design and manufacturing, 3D modeling and printing, landing pages and e-shops for various companies. Spreadsheet automation with macros: Project: Virtual Drilling Enginnering' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/freelance.png' },
