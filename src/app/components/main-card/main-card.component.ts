@@ -35,7 +35,7 @@ export class MainCardComponent implements OnInit {
         presentation: [
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
-          { field: 'Profession', value: "Web/App Developer & Engineer" },
+          { field: 'Profession', value: "Software Developer / MS in Mechanical Engineering" },
           { field: 'Presentation', value: "Software Developer with experience in Frontend and Backend Frameworks (AngularJS, Angular, React, Vue, Javascript, NodeJS, Java, .NET ), I'm also familiar with 3D modeling & animation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art technologies." }
         ],
         email: "lenincomp@gmail.com",
@@ -68,7 +68,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'IngeProyectos TERA' },
           { field: 'Period', value: 'Sep 2016 - Jan 2021' },
           { field: 'Position', value: 'Product Development Engineer' },
-          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, mechanical ventilators for patients with COVID type respiratory crisis, machines to fold and unfold fabrics, CAD & CAM design and manufacturing, 3D modeling and printing, landing pages and e-shops for various companies. Spreadsheet automation with macros: Project: Virtual Drilling Enginnering' }
+          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, mechanical ventilators for patients with COVID type respiratory crisis, machines to fold and unfold fabrics, used general CAD & CAM tools for 3D modeling and manufacturing, created various landing pages and e-shops for small companies. Implemented Spreadsheet automation with macros in oil well drilling Project: Virtual Drilling Enginnering' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/freelance.png' },
