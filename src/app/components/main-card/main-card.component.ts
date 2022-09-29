@@ -35,7 +35,7 @@ export class MainCardComponent implements OnInit {
         presentation: [
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
-          { field: 'Profession', value: "Software Developer / MS in Mechanical Engineering" },
+          { field: 'Profession', value: "Software Developer / BS in Mechanical Engineering" },
           { field: 'Presentation', value: "Software Developer with experience in Frontend and Backend Frameworks (AngularJS, Angular, React, Vue, Javascript, NodeJS, Java, .NET ), I'm also familiar with 3D modeling & animation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art technologies." }
         ],
         email: "lenincomp@gmail.com",
