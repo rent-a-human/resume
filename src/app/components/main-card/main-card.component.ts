@@ -133,7 +133,9 @@ export class MainCardComponent implements OnInit {
               { name: "Proteus", logoUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Proteus_Design_Suite_Atom_Logo.png/172px-Proteus_Design_Suite_Atom_Logo.png' },
               { name: "Arduino", logoUrl: 'assets/icons/arduino.svg' },
               { name: "Raspberry", logoUrl: 'assets/icons/raspberry.png' },
-              { name: "Blender", logoUrl: 'assets/icons/blender.svg' }
+              { name: "Blender", logoUrl: 'assets/icons/blender.svg' },
+              { name: "Flutter", logoUrl: 'https://raw.githubusercontent.com/dnfield/flutter_svg/7d374d7107561cbd906d7c0ca26fef02cc01e7c8/example/assets/flutter_logo.svg'},
+              { name: "Ruby on Rails", logoUrl: 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png'}
             ]
           },
           {
