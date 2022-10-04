@@ -36,7 +36,7 @@ export class MainCardComponent implements OnInit {
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
           { field: 'Profession', value: "Software Developer / BS in Mechanical Engineering" },
-          { field: 'Presentation', value: "Software Developer with experience in Frontend and Backend Frameworks (AngularJS, Angular, React, Vue, Javascript, NodeJS, Java, .NET ), I'm also familiar with 3D modeling & animation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art technologies." }
+          { field: 'Presentation', value: "Experienced in Frontend and Backend Frameworks (AngularJS, Angular, React, Vue, Javascript, NodeJS, Java, .NET ), I'm also familiar with 3D modeling, animation & simulation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art cutting-edge technologies. I hope to one day be working in NASA, SpaceX or Colombian Space Force." }
         ],
         email: "lenincomp@gmail.com",
         github: "github.com/rent-a-human",
@@ -46,7 +46,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/6602522?s=200&v=4' },
           { field: 'CompanyName', value: 'IGM Technology' },
           { field: 'Period', value: 'Oct 2021 - Present' },
-          { field: 'Position', value: 'Tech Lead Developer' },
+          { field: 'Position', value: 'Tech Lead / Developer' },
           { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Implemented full migration of legacy frontend angularJS application to Angular2+ Material' }
         ],
         [
@@ -68,7 +68,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'IngeProyectos TERA' },
           { field: 'Period', value: 'Sep 2016 - Jan 2021' },
           { field: 'Position', value: 'Product Development Engineer' },
-          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, mechanical ventilators for patients with COVID type respiratory crisis, machines to fold and unfold fabrics, used general CAD & CAM tools for 3D modeling and manufacturing, created various landing pages and e-shops for small companies. Implemented Spreadsheet automation with macros in oil well drilling Project: Virtual Drilling Enginnering' }
+          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, mechanical ventilators for patients with COVID type respiratory crisis, machines to fold and unfold fabrics, used general CAD & CAM tools for 3D modeling and manufacturing, applied finite element simulations for stress analysis, created various landing pages and e-shops for small companies. Implemented Spreadsheet automation with macros in oil well drilling Project: Virtual Drilling Enginnering' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/freelance.png' },
@@ -138,7 +138,7 @@ export class MainCardComponent implements OnInit {
           },
           {
             name: "Languages", type: 'score', content: [
-              { name: "Spanish", score: 100 },
+              { name: "Spanish", score: 99 },
               { name: "English", score: 90 }
             ]
           },
