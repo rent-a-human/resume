@@ -36,7 +36,7 @@ export class MainCardComponent implements OnInit {
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
           { field: 'Profession', value: "Software Developer / BS in Mechanical Engineering" },
-          { field: 'Presentation', value: "Experienced in Frontend and Backend Frameworks (AngularJS, Angular, React, Vue, Javascript, NodeJS, Java, .NET ), I'm also familiar with 3D modeling, animation & simulation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art cutting-edge technologies. I hope to one day be working in NASA, SpaceX or Colombian Space Force." }
+          { field: 'Presentation', value: "Worked with AngularJS, Angular, React Native, JavaScript, NodeJS, Java, Spring Boot, .NET, I'm also familiar with 3D modeling, animation & simulation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art cutting-edge technologies. I hope to one day be working in NASA, SpaceX or Colombian Space Force." }
         ],
         email: "lenincomp@gmail.com",
         github: "github.com/rent-a-human",
@@ -61,7 +61,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'Slabcode SAS' },
           { field: 'Period', value: 'Feb 2021 - Present' },
           { field: 'Position', value: 'Frontend Developer' },
-          { field: 'Achievements', value: 'Built and maintain clients web solutions (React, Angular, Javascript)' }
+          { field: 'Achievements', value: 'Built and maintain customer\'s web solutions (React, Angular, Javascript)' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/tera-logo.jpeg' },
@@ -97,27 +97,27 @@ export class MainCardComponent implements OnInit {
         skills: [
           {
             name: "Frontend", type: 'score', content: [
-              { name: "HTML", score: 90 },
-              { name: "CSS", score: 90 },
+              { name: "HTML", score: 95 },
+              { name: "CSS", score: 95 },
               { name: "JavaScript", score: 90 },
               { name: "TypeScript", score: 90 },
               { name: "Angular", score: 90 },
               { name: "AngularJS", score: 70 },
               { name: "React", score: 80 },
-              { name: "Vue", score: 60 },
-              { name: "React Native", score: 70 },
+              { name: "React Native", score: 90 },
             ]
           },
           {
             name: "Backend", type: 'score', content: [
               { name: "Spring Boot", score: 70 },
-              { name: "NodeJS", score: 70 },
-              { name: "Java", score: 60 },
+              { name: "NodeJS", score: 80 },
+              { name: "Java", score: 70 },
               { name: "C#-Vb.Net", score: 70 },
               { name: "PHP", score: 70 },
               { name: "C++", score: 70 },
               { name: "MySQL", score: 80 },
-              { name: "Mongo", score: 60 },
+              { name: "Mongo", score: 75 },
+              { name: "Docker", score: 60 }
             ]
           },
           {
@@ -135,7 +135,9 @@ export class MainCardComponent implements OnInit {
               { name: "Raspberry", logoUrl: 'assets/icons/raspberry.png' },
               { name: "Blender", logoUrl: 'assets/icons/blender.svg' },
               { name: "Flutter", logoUrl: 'https://raw.githubusercontent.com/dnfield/flutter_svg/7d374d7107561cbd906d7c0ca26fef02cc01e7c8/example/assets/flutter_logo.svg'},
+              { name: "Docker", logoUrl: 'https://avatars.githubusercontent.com/u/5429470?s=200&v=4'},
               { name: "Ruby on Rails", logoUrl: 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png'}
+              
             ]
           },
           {
