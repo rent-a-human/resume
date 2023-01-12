@@ -54,14 +54,14 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'Olimpia SAS - MiFirma' },
           { field: 'Period', value: 'Feb 2021 - Sep 2021' },
           { field: 'Position', value: 'Frontend Developer' },
-          { field: 'Achievements', value: 'Project: MiFirma: MiFirma\'s Office Add-in (NodeJS) and MiFirma: Biometric Signature for PDF documents (Angular + .net Core).' }
+          { field: 'Achievements', value: 'Project: MiFirma: MiFirma\'s Office Add-in (NodeJS) and MiFirma: Biometric Signature for PDF documents (Angular + .NET Core).' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/icons/slabcode.svg' },
           { field: 'CompanyName', value: 'Slabcode SAS' },
           { field: 'Period', value: 'Feb 2021 - Present' },
           { field: 'Position', value: 'Frontend Developer' },
-          { field: 'Achievements', value: 'Built and maintain customer\'s web solutions (React, Angular, Javascript)' }
+          { field: 'Achievements', value: 'Built and maintain customer\'s web solutions.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/tera-logo.jpeg' },
