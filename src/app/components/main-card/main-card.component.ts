@@ -35,12 +35,12 @@ export class MainCardComponent implements OnInit {
         presentation: [
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
-          { field: 'Profession', value: "Software Developer / BS in Mechanical Engineering" },
-          { field: 'Presentation', value: "Worked with AngularJS, Angular, React Native, JavaScript, NodeJS, Java, Spring Boot, .NET, I'm also familiar with 3D modeling, animation & simulation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art cutting-edge technologies. I hope to one day be working in NASA, SpaceX or Colombian Space Force." }
+          { field: 'Profession', value: "Software Developer / Bachelor of Science in Mechanical Engineering" },
+          { field: 'Presentation', value: "Expert in Angular, React Native, Svelte, JavaScript, NodeJS, Java, Spring Boot, .NET, Mongo, Postgres and SQL, I'm also familiar with 3D modeling, animation & simulation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art cutting-edge technologies. I hope to one day be working in NASA, SpaceX or Colombian Space Force." }
         ],
         email: "lenincomp@gmail.com",
         github: "github.com/rent-a-human",
-        mobile: "+573025688681",
+        mobile: "+57 3025688681",
         location: "Colombia",
         workExperiences: [[
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/6602522?s=200&v=4' },
@@ -68,14 +68,14 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'IngeProyectos TERA' },
           { field: 'Period', value: 'Sep 2016 - Jan 2021' },
           { field: 'Position', value: 'Product Development Engineer' },
-          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, mechanical ventilators for patients with COVID type respiratory crisis, machines to fold and unfold fabrics, used general CAD & CAM tools for 3D modeling and manufacturing, applied finite element simulations for stress analysis, created various landing pages and e-shops for small companies. Implemented Spreadsheet automation with macros in oil well drilling Project: Virtual Drilling Enginnering' }
+          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, mechanical ventilators for patients with COVID type respiratory crisis, machines to fold and unfold fabrics, used general CAD & CAM tools for 3D modeling and manufacturing, applied finite element simulations for stress analysis, created various landing pages and e-shops for small companies (PHP + MySQL). Implemented Spreadsheet automation with macros in oil well drilling Project: Virtual Drilling Enginnering' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/freelance.png' },
           { field: 'CompanyName', value: 'Freelance' },
           { field: 'Period', value: 'Feb 2006 - Oct 2009' },
           { field: 'Position', value: 'Other' },
-          { field: 'Achievements', value: 'Build and mantain PHP based websites. Build Wordpress & PrestaShop landing pages. Developed desktop data base systems using MS Access. Taught English and systems private lessons. Help students developing academic projects.' }
+          { field: 'Achievements', value: 'Build and mantain PHP based websites. Build Wordpress & PrestaShop landing pages. Developed desktop data base systems using MS Access. Taught English and systems private lessons. Assited students developing academic projects.' }
         ],
         ],
         academicExperiences: [
@@ -97,25 +97,27 @@ export class MainCardComponent implements OnInit {
         skills: [
           {
             name: "Frontend", type: 'score', content: [
+              { name: "Angular", score: 90 },
+              { name: "AngularJS", score: 80 },
               { name: "HTML", score: 95 },
               { name: "CSS", score: 95 },
               { name: "JavaScript", score: 90 },
               { name: "TypeScript", score: 90 },
-              { name: "Angular", score: 90 },
-              { name: "AngularJS", score: 70 },
               { name: "React", score: 80 },
               { name: "React Native", score: 90 },
+              { name: "Svelte", score: 90 },
+
             ]
           },
           {
             name: "Backend", type: 'score', content: [
-              { name: "Spring Boot", score: 70 },
               { name: "NodeJS", score: 80 },
-              { name: "Java", score: 70 },
-              { name: "C#-Vb.Net", score: 70 },
+              { name: "C#-Vb.Net", score: 80 },
+              { name: "Spring Boot - Java", score: 70 },
               { name: "PHP", score: 70 },
               { name: "C++", score: 70 },
               { name: "MySQL", score: 80 },
+              { name: "Postgres", score: 75 },
               { name: "Mongo", score: 75 },
               { name: "Docker", score: 60 }
             ]
