@@ -47,7 +47,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'IGM Technology' },
           { field: 'Period', value: 'Oct 2021 - Present' },
           { field: 'Position', value: 'Tech Lead / Developer' },
-          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Implemented full migration of legacy frontend angularJS application to Angular2+ Material' }
+          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Implemented full migration of legacy frontend angularJS application to Angular14 using Material Design. Upgraded angularJS codebase of Google AddOns to Svelte. Lead and participated in development of fullstack custom module implementations (Angular + Java)' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/83523063?v=4' },
