@@ -35,7 +35,7 @@ export class MainCardComponent implements OnInit {
         presentation: [
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
-          { field: 'Profession', value: "Software Developer / Bachelor of Science in Mechanical Engineering" },
+          { field: 'Profession', value: "Software Developer / Tech Lead / Development Manager. Bachelor of Science in Mechanical Engineering" },
           { field: 'Presentation', value: "Expert in Angular, React Native, Svelte, JavaScript, NodeJS, Java, Spring Boot, .NET, Mongo, Postgres and SQL, I'm also familiar with 3D modeling, animation & simulation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art cutting-edge technologies. I hope to one day be working in NASA, SpaceX or Colombian Space Force." }
         ],
         email: "lenincomp@gmail.com",
@@ -46,7 +46,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/6602522?s=200&v=4' },
           { field: 'CompanyName', value: 'IGM Technology' },
           { field: 'Period', value: 'Oct 2021 - Present' },
-          { field: 'Position', value: 'Tech Lead / Developer' },
+          { field: 'Position', value: 'Tech Lead / Development Manager' },
           { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Implemented full migration of legacy frontend angularJS application to Angular14 using Material Design. Upgraded angularJS codebase of Google AddOns to Svelte. Lead and participated in development of fullstack custom module implementations (Angular + Java)' }
         ],
         [
@@ -75,7 +75,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'Freelance' },
           { field: 'Period', value: 'Feb 2006 - Oct 2009' },
           { field: 'Position', value: 'Other' },
-          { field: 'Achievements', value: 'Build and mantain PHP based websites. Build Wordpress & PrestaShop landing pages. Developed desktop data base systems using MS Access. Taught English and systems private lessons. Assited students developing academic projects.' }
+          { field: 'Achievements', value: 'Build and mantain PHP based websites. Build Wordpress & PrestaShop landing pages. Developed desktop data base systems using MS Access. Created some automations with macros in Excel-Vb' }
         ],
         ],
         academicExperiences: [
