@@ -9,7 +9,13 @@
         </div>
     </mat-card-title>
     <mat-card-subtitle>{{experience[3].value}} {{experience[2].value}}</mat-card-subtitle>
-    <mat-card-subtitle>{{experience[4].value}}</mat-card-subtitle>
+    <mat-card-subtitle>
+    <ul>
+        <ng-container *ngFor="let str of splittedExperience">
+        <li *ngIf="str !== '' ">{{str}}</li>
+        </ng-container>
+    </ul> 
+    </mat-card-subtitle>
 </mat-card-header>
 
 <mat-menu #editmenu="matMenu">

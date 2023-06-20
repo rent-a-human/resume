@@ -36,39 +36,39 @@ export class MainCardComponent implements OnInit {
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
           { field: 'Profession', value: "Software Developer / Tech Lead / Development Manager. Bachelor of Science in Mechanical Engineering" },
-          { field: 'Presentation', value: "Expert in Angular, React Native, Svelte, JavaScript, NodeJS, Java, Spring Boot, .NET, Mongo, Postgres and SQL, I'm also familiar with 3D modeling, animation & simulation, industrial automation, robotics and electronics. Passionate about developing prototypes, applications and using state-of-the-art cutting-edge technologies. I hope to one day be working in NASA, SpaceX or Colombian Space Force." }
+          { field: 'Presentation', value: "Experienced Software Developer and Tech Lead with a strong background in Angular, React Native, and JavaScript. Skilled in full-stack development and passionate about utilizing cutting-edge technologies to develop innovative solutions. Seeking opportunities to contribute my expertise in a challenging and dynamic environment." }
         ],
-        email: "lenincomp@gmail.com",
+        email: "johnleninortiz@gmail.com",
         github: "github.com/rent-a-human",
-        mobile: "+57 3025688681",
+        mobile: "+57 302 568 8681",
         location: "Colombia",
         workExperiences: [[
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/6602522?s=200&v=4' },
           { field: 'CompanyName', value: 'IGM Technology' },
           { field: 'Period', value: 'Oct 2021 - Present' },
           { field: 'Position', value: 'Tech Lead / Development Manager' },
-          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Implemented full migration of legacy frontend angularJS application to Angular14 using Material Design. Upgraded angularJS codebase of Google AddOns to Svelte. Lead and participated in development of fullstack custom module implementations (Angular + Java)' }
+          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Led the successful migration of a legacy AngularJS application to Angular 14, resulting in improved performance and enhanced user experience. Upgraded the AngularJS codebase of Google AddOns to Svelte. Led and participated in the development of full-stack custom module implementations using Angular and Java.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/83523063?v=4' },
           { field: 'CompanyName', value: 'Olimpia SAS - MiFirma' },
           { field: 'Period', value: 'Feb 2021 - Sep 2021' },
           { field: 'Position', value: 'Frontend Developer' },
-          { field: 'Achievements', value: 'Project: MiFirma: MiFirma\'s Office Add-in (NodeJS) and MiFirma: Biometric Signature for PDF documents (Angular + .NET Core).' }
+          { field: 'Achievements', value: 'Project: MiFirma: Developed MiFirma\'s Office Add-in using NodeJS, enabling seamless integration with Microsoft Office suite for enhanced document signing and management capabilities. Implemented a Biometric Signature feature for PDF documents using Angular and NET Core, providing a secure and legally binding signing solution.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/icons/slabcode.svg' },
           { field: 'CompanyName', value: 'Slabcode SAS' },
           { field: 'Period', value: 'Feb 2021 - Present' },
-          { field: 'Position', value: 'Frontend Developer' },
-          { field: 'Achievements', value: 'Built and maintain customer\'s web solutions.' }
+          { field: 'Position', value: 'Software Developer' },
+          { field: 'Achievements', value: 'Frontend: Proficient in Angular, React Native, and Svelte. Developed responsive web applications with intuitive user interfaces and implemented state-of-the-art design patterns.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/tera-logo.jpeg' },
           { field: 'CompanyName', value: 'IngeProyectos TERA' },
           { field: 'Period', value: 'Sep 2016 - Jan 2021' },
-          { field: 'Position', value: 'Product Development Engineer' },
-          { field: 'Achievements', value: 'Product development from conceptualization to manufacturing, including: various CNC screen printing machines, mechanical ventilators for patients with COVID type respiratory crisis, machines to fold and unfold fabrics, used general CAD & CAM tools for 3D modeling and manufacturing, applied finite element simulations for stress analysis, created various landing pages and e-shops for small companies (PHP + MySQL). Implemented Spreadsheet automation with macros in oil well drilling Project: Virtual Drilling Enginnering' }
+          { field: 'Position', value: 'Development Engineer' },
+          { field: 'Achievements', value: 'Developed various products from conceptualization to manufacturing/implementation, including CNC machines, mechanical ventilators for patients with respiratory crises like COVID, and fabric folding/unfolding machines. Proficient in using CAD & CAM tools for 3D modeling and manufacturing. Also conducted finite element simulations for stress analysis. Created landing pages and e-shops for small companies using PHP + MySQL. Successfully implemented spreadsheet automations using Excel macros in the Virtual Drilling Engineering project for oil well drilling.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/freelance.png' },

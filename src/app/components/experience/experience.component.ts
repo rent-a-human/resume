@@ -7,13 +7,14 @@ import { MatMenuTrigger } from '@angular/material/menu';
   styleUrls: ['./experience.component.less']
 })
 export class ExperienceComponent implements OnInit {
+  splittedExperience: any;
   @ViewChild("editMenu") editMenu!: MatMenuTrigger;
   @Input() experience: any;
   @Input() editmode!: boolean;
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.splittedExperience = this.experience[4].value.split('.')
   }
 
   captureEvent(event: any) {
