@@ -143,12 +143,20 @@ export class MainCardComponent implements OnInit {
             ]
           },
           {
+            name: "Interests", type: 'image', content: [
+              { name: "Nasa", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg' },
+              { name: "SpaceX", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/36/SpaceX-Logo-Xonly.svg' },
+              { name: "ChatGPT", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg' }
+            ]
+          },
+          {
             name: "Languages", type: 'score', content: [
               { name: "Spanish", score: 99 },
               { name: "English", score: 90 }
             ]
           },
         ]
+
       }
       this.saveData();
     }
