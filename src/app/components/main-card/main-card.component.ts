@@ -36,7 +36,7 @@ export class MainCardComponent implements OnInit {
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
           { field: 'Profession', value: "Software Developer / Development Team Leader. Bachelor of Science in Mechanical Engineering" },
-          { field: 'Presentation', value: "Highly skilled Software Developer with a robust foundation in JavaScript, Angular, and adept problem-solving abilities in computing systems. Proficient in full-stack development and deeply passionate about harnessing cutting-edge technologies to craft inventive solutions. Eager to collaborate on challenging projects in a dynamic and inspiring environment." }
+          { field: 'Presentation', value: "Highly skilled Software Developer with a robust foundation in Javascript, Angular, and adept problem-solving abilities in computing systems. Proficient in full-stack development and deeply passionate about harnessing cutting-edge technologies to craft inventive solutions. Eager to collaborate on challenging projects in a dynamic and inspiring environment." }
         ],
         email: "johnleninortiz@gmail.com",
         github: "github.com/rent-a-human",
@@ -45,8 +45,8 @@ export class MainCardComponent implements OnInit {
         workExperiences: [[
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/6602522?s=200&v=4' },
           { field: 'CompanyName', value: 'IGM Technology' },
-          { field: 'Period', value: 'Oct 2021 - Present' },
-          { field: 'Position', value: 'Tech Lead / Development Manager' },
+          { field: 'Period', value: 'Sep 2021 - Present' },
+          { field: 'Position', value: 'Development Team Leader' },
           { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Led the successful migration of a legacy AngularJS application to Angular 14, resulting in improved performance and enhanced user experience. Upgraded the AngularJS codebase of Google AddOns to Svelte. Led and participated in the development of full-stack custom module implementations using Angular and Java.' }
         ],
         [
