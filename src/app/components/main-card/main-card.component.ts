@@ -35,8 +35,8 @@ export class MainCardComponent implements OnInit {
         presentation: [
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
-          { field: 'Profession', value: "Software Developer / Tech Lead / Development Manager. Bachelor of Science in Mechanical Engineering" },
-          { field: 'Presentation', value: "Experienced Software Developer and Tech Lead with a strong background in Angular, React Native, and JavaScript. Skilled in full-stack development and passionate about utilizing cutting-edge technologies to develop innovative solutions. Seeking opportunities to contribute my expertise in a challenging and dynamic environment." }
+          { field: 'Profession', value: "Software Developer / Development Team Leader. Bachelor of Science in Mechanical Engineering" },
+          { field: 'Presentation', value: "Highly skilled Software Developer with a robust foundation in JavaScript, Angular, and adept problem-solving abilities in computing systems. Proficient in full-stack development and deeply passionate about harnessing cutting-edge technologies to craft inventive solutions. Eager to collaborate on challenging projects in a dynamic and inspiring environment." }
         ],
         email: "johnleninortiz@gmail.com",
         github: "github.com/rent-a-human",
