@@ -36,7 +36,7 @@ export class MainCardComponent implements OnInit {
           { field: 'ImageURL', value: 'https://avatars.githubusercontent.com/u/20101141?v=4' },
           { field: 'Name', value: 'John Lenin Ortiz Gamba' },
           { field: 'Profession', value: "Software Developer / Development Team Leader. Bachelor of Science in Mechanical Engineering" },
-          { field: 'Presentation', value: "Highly skilled Software Developer with a robust foundation in Javascript, Angular, and adept problem-solving abilities in computing systems. Proficient in full-stack development and deeply passionate about harnessing cutting-edge technologies to craft inventive solutions. Eager to collaborate on challenging projects in a dynamic and inspiring environment." }
+          { field: 'Presentation', value: "A highly experienced Software Developer with a proven track record in leading development teams and delivering robust, scalable solutions. Proficient in a wide range of frontend technologies, including Angular, React, and Svelte, as well as backend frameworks such as Node.js and Java. Passionate about utilizing cutting-edge tools to solve complex problems and drive innovation, with expertise in full-stack development and a solid foundation in mechanical engineering." }
         ],
         email: "johnleninortiz@gmail.com",
         github: "github.com/rent-a-human",
@@ -47,28 +47,28 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'IGM Technology' },
           { field: 'Period', value: 'Sep 2021 - Present' },
           { field: 'Position', value: 'Development Team Leader' },
-          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Led the successful migration of a legacy AngularJS application to Angular 14, resulting in improved performance and enhanced user experience. Upgraded the AngularJS codebase of Google AddOns to Svelte. Led and participated in the development of full-stack custom module implementations using Angular and Java.' }
+          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Spearheaded the migration of a legacy AngularJS application to Angular 14, resulting in significant performance improvements and a more refined user experience.Led the upgrade of Google Add-ons from AngularJS to Svelte, delivering optimized and modernized codebases.Developed full-stack custom module implementations, ensuring seamless integration between Angular and Java components.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/83523063?v=4' },
           { field: 'CompanyName', value: 'Olimpia SAS - MiFirma' },
           { field: 'Period', value: 'Feb 2021 - Sep 2021' },
           { field: 'Position', value: 'Frontend Developer' },
-          { field: 'Achievements', value: 'Project: MiFirma: Developed MiFirma\'s Office Add-in using NodeJS, enabling seamless integration with Microsoft Office suite for enhanced document signing and management capabilities. Implemented a Biometric Signature feature for PDF documents using Angular and NET Core, providing a secure and legally binding signing solution.' }
+          { field: 'Achievements', value: 'Designed and built the MiFirma Office Add-in using Nodejs, enhancing document signing processes through seamless Microsoft Office integration.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/icons/slabcode.svg' },
           { field: 'CompanyName', value: 'Slabcode SAS' },
           { field: 'Period', value: 'Feb 2021 - Present' },
           { field: 'Position', value: 'Software Developer' },
-          { field: 'Achievements', value: 'Frontend: Proficient in Angular, React Native, and Svelte. Developed responsive web applications with intuitive user interfaces and implemented state-of-the-art design patterns.' }
+          { field: 'Achievements', value: 'Developed responsive, intuitive web applications using Angular, React Native, and Svelte, with a focus on modern design patterns and user experiences.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/tera-logo.jpeg' },
           { field: 'CompanyName', value: 'IngeProyectos TERA' },
           { field: 'Period', value: 'Sep 2016 - Jan 2021' },
           { field: 'Position', value: 'Development Engineer' },
-          { field: 'Achievements', value: 'Developed various products from conceptualization to manufacturing/implementation, including CNC machines, mechanical ventilators for patients with respiratory crises like COVID, and fabric folding/unfolding machines. Proficient in using CAD & CAM tools for 3D modeling and manufacturing. Also conducted finite element simulations for stress analysis. Created landing pages and e-shops for small companies using PHP + MySQL. Successfully implemented spreadsheet automations using Excel macros in the Virtual Drilling Engineering project for oil well drilling.' }
+          { field: 'Achievements', value: 'Led the design and development of mechanical systems, including CNC machines and mechanical ventilators. Applied CAD & CAM tools for manufacturing and 3D modeling, with a focus on stress analysis through finite element simulations. Created landing pages and automated workflows using PHP, MySQL, and Excel macros.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'assets/img/freelance.png' },
@@ -136,9 +136,10 @@ export class MainCardComponent implements OnInit {
               { name: "Arduino", logoUrl: 'assets/icons/arduino.svg' },
               { name: "Raspberry", logoUrl: 'assets/icons/raspberry.png' },
               { name: "Blender", logoUrl: 'assets/icons/blender.svg' },
-              { name: "Flutter", logoUrl: 'https://raw.githubusercontent.com/dnfield/flutter_svg/7d374d7107561cbd906d7c0ca26fef02cc01e7c8/example/assets/flutter_logo.svg'},
               { name: "Docker", logoUrl: 'https://avatars.githubusercontent.com/u/5429470?s=200&v=4'},
-              { name: "Ruby on Rails", logoUrl: 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png'}
+              { name: "Ruby on Rails", logoUrl: 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png'},
+              { name: "CKEditor", logoUrl: 'https://cdn.worldvectorlogo.com/logos/ckeditor-2.svg'},
+              { name: "DevExtreme", logoUrl: 'https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_a57b152e38712ef08473c51e9cce49c8/devexpress.png'},
               
             ]
           },
@@ -146,7 +147,7 @@ export class MainCardComponent implements OnInit {
             name: "Interests", type: 'image', content: [
               { name: "Nasa", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg' },
               { name: "SpaceX", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/36/SpaceX-Logo-Xonly.svg' },
-              { name: "ChatGPT", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg' },
+              { name: "AI", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg' },
               { name: "Department of Energy DOE", logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e2/Seal_of_the_United_States_Department_of_Energy.svg' },
             ]
           },
