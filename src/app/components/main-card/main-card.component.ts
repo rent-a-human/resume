@@ -47,7 +47,7 @@ export class MainCardComponent implements OnInit {
           { field: 'CompanyName', value: 'Gravity' },
           { field: 'Period', value: 'Sep 2021 - Present' },
           { field: 'Position', value: 'Development Team Leader' },
-          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Spearheaded the migration of a legacy AngularJS application to Angular 14, resulting in significant performance improvements and a more refined user experience. Led the upgrade of Google Add-ons from AngularJS to Svelte, delivering optimized and modernized codebases. Developed full-stack custom module implementations, ensuring seamless integration between Angular and Java components. Designed and developed state of the art reporting application with live PDF preview generation and built-in rich text and spreadsheets editor.' }
+          { field: 'Achievements', value: 'Project: Gravity: Cloud Based Financial Close Management System. Spearheaded the migration of a legacy AngularJS application to Angular 14, resulting in significant performance improvements and a more refined user experience. Led the upgrade of Google Add-ons from AngularJS to Svelte, delivering optimized and modernized codebases. Developed full-stack custom module implementations, ensuring seamless integration between Angular and Java components. Designed and developed state of the art reporting application with live PDF preview generation and built-in rich text and spreadsheets editors.' }
         ],
         [
           { field: 'CompanyLogoUrl', value: 'https://avatars.githubusercontent.com/u/83523063?v=4' },
