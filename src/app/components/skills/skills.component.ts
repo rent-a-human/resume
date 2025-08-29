@@ -13,7 +13,6 @@ export class SkillsComponent implements OnInit {
   @Input() editmode!: boolean;
   @Output() triggerSave: EventEmitter<any> = new EventEmitter<any>();
 
-
   newSkill!: string;
   newUrl!: string;
   newScore!: number;
