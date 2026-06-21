@@ -45,18 +45,18 @@ export class MainCardComponent implements OnInit {
         "location": "Colombia",
         "workExperiences": [
           [
-            { "field": "CompanyLogoUrl", "value": "https://img.icons8.com/color/96/sun--v1.png" },
-            { "field": "CompanyName", "value": "SolarVerde S.A.S." },
-            { "field": "Period", "value": "May 2026 - Present" },
-            { "field": "Position", "value": "Co-Founder · Lead Software & Systems Architect" },
-            { "field": "Achievements", "value": "Co-founded and structured SolarVerde S.A.S. as a digital-first renewable energy service company (ESCO) in Colombia. Architected the technical ecosystem, including a web-based solar savings calculator utilizing cross-window postMessage communication and real-time iframe sync. Integrated 'Lumina'—an intelligent conversational AI agent using the Agent Neo framework—supporting multimodal invoice parsing (extracting utility tariff rates and coordinates from ESSA electricity bills). Built a robust PHP backend featuring PDF text extraction, regional geolocation, solar irradiance calculation, and a custom IP-based unique visitor tracking engine. Secured CREG 174 regulatory approval from ESSA E.S.P. for the company's 5.04 kWp autogeneration pilot project." }
-          ],
-          [
             { "field": "CompanyLogoUrl", "value": "https://avatars.githubusercontent.com/u/6602522?s=200&v=4" },
             { "field": "CompanyName", "value": "Gravity / ClearGov (via Slabcode)" },
             { "field": "Period", "value": "Sep 2021 - Present" },
             { "field": "Position", "value": "Development Team Leader" },
             { "field": "Achievements", "value": "Led full-stack development of Gravity, a cloud-based Financial Close Management System serving enterprise clients across North America. Spearheaded migration of a legacy AngularJS codebase to Angular 14, delivering measurable performance improvements and a modernized UX. Architected and built Disclosure Studio — a state-of-the-art WYSIWYG financial report authoring tool featuring live PDF preview, rich-text and spreadsheet editors (CKEditor), client-side rendering (jsPDF), and server-side styled template generation via Adobe InDesign Server. Led upgrade of Google Workspace Add-ons from AngularJS to Svelte. Developed full-stack custom module integrations across Angular and Java (Spring Boot). Continued contributing post-acquisition through the ClearGov / LeadEdge merger." }
+          ],
+          [
+            { "field": "CompanyLogoUrl", "value": "https://img.icons8.com/color/96/sun--v1.png" },
+            { "field": "CompanyName", "value": "SolarVerde SAS" },
+            { "field": "Period", "value": "May 2026 - Present" },
+            { "field": "Position", "value": "Co-Founder · Lead Software & Systems Architect" },
+            { "field": "Achievements", "value": "Co-founded and structured SolarVerde SAS as a digital-first renewable energy service company (ESCO) in Colombia. Architected the technical ecosystem, including a web-based solar savings calculator utilizing cross-window postMessage communication and real-time iframe sync. Integrated 'Lumina'—an intelligent conversational AI agent using the Agent Neo framework—supporting multimodal invoice parsing (extracting utility tariff rates and coordinates from ESSA electricity bills). Built a robust PHP backend featuring PDF text extraction, regional geolocation, solar irradiance calculation, and a custom IP-based unique visitor tracking engine. Secured CREG 174 regulatory approval from ESSA ESP for the company's 5,04 kWp autogeneration pilot project." }
           ],
           [
             { "field": "CompanyLogoUrl", "value": "https://avatars.githubusercontent.com/u/20101141?v=4" },
