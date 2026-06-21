@@ -45,6 +45,13 @@ export class MainCardComponent implements OnInit {
         "location": "Colombia",
         "workExperiences": [
           [
+            { "field": "CompanyLogoUrl", "value": "https://img.icons8.com/color/96/sun--v1.png" },
+            { "field": "CompanyName", "value": "SolarVerde S.A.S." },
+            { "field": "Period", "value": "May 2026 - Present" },
+            { "field": "Position", "value": "Co-Founder · Lead Software & Systems Architect" },
+            { "field": "Achievements", "value": "Co-founded and structured SolarVerde S.A.S. as a digital-first renewable energy service company (ESCO) in Colombia. Architected the technical ecosystem, including a web-based solar savings calculator utilizing cross-window postMessage communication and real-time iframe sync. Integrated 'Lumina'—an intelligent conversational AI agent using the Agent Neo framework—supporting multimodal invoice parsing (extracting utility tariff rates and coordinates from ESSA electricity bills). Built a robust PHP backend featuring PDF text extraction, regional geolocation, solar irradiance calculation, and a custom IP-based unique visitor tracking engine. Secured CREG 174 regulatory approval from ESSA E.S.P. for the company's 5.04 kWp autogeneration pilot project." }
+          ],
+          [
             { "field": "CompanyLogoUrl", "value": "https://avatars.githubusercontent.com/u/6602522?s=200&v=4" },
             { "field": "CompanyName", "value": "Gravity / ClearGov (via Slabcode)" },
             { "field": "Period", "value": "Sep 2021 - Present" },
