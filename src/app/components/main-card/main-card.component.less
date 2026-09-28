@@ -1,23 +1,111 @@
+.resume-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: #1e293b;
+  color: #f8fafc;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 16px 16px 0 16px;
+
+  .toolbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .brand-icon {
+      color: #38bdf8;
+    }
+
+    .brand-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .toolbar-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .print-btn {
+      background-color: #0284c7;
+      color: white;
+      font-weight: 500;
+      mat-icon {
+        margin-right: 6px;
+      }
+    }
+
+    .toggle-control {
+      color: #f1f5f9;
+    }
+
+    .reset-btn {
+      color: #f87171;
+      border-color: #f87171;
+    }
+  }
+}
+
 .main-div {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px;
 
+  &.ats-mode-active {
+    .main-card {
+      background-image: none !important;
+      background-color: #ffffff !important;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+      border: 1px solid #e2e8f0;
+    }
+    .colored, .color-transparent {
+      background-color: transparent !important;
+    }
+  }
+
   .mat-card-header {
-    max-width: 95%;
+    max-width: 98%;
   }
 
   .colored {
-    background-color:  rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 2px 6px;
+    border-radius: 4px;
   }
 
   .dark {
-    color: black;
+    color: #0f172a;
   }
 
-  .color-transparent {
-    background-color:  rgba(255, 255, 255, 0.8);
+  .profession-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e3a8a !important;
+    margin-top: 6px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .presentation-bio {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 14px;
+    border-radius: 6px;
+    line-height: 1.6;
+    color: #1e293b !important;
+    font-size: 0.95rem;
+    margin-top: 6px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   }
 
   .bgbutton {
@@ -34,15 +122,30 @@
   }
 
   a {
-    color: darkslategrey;
+    color: #0369a1;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .resume-title {
-    font-size: large;
-    color: teal;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f766e;
+    letter-spacing: 0.5px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid #ccfbf1;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+
+    .section-icon {
+      color: #0f766e;
+    }
+
     .profile-button {
       position: relative;
       top: -8px;
@@ -55,42 +158,76 @@
     }
   }
 
+  .education-header {
+    margin-top: 24px;
+  }
+
   .main-card {
     width: 100%;
     background-size: cover;
+    border-radius: 12px;
   }
 
   .icon-img {
     width: 20px;
     height: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
   }
 
   .contact-info {
-    background-color: lightgray;
+    background-color: #f1f5f9;
+    border-radius: 6px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    margin: 8px 0 16px 0;
+
+    .contact-link {
+      text-decoration: none;
+    }
   }
 
   .header-image {
     background-size: cover;
+    border-radius: 8px;
   }
 
   .mat-card-avatar {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
   }
 }
 
 .row {
   display: flex;
+  gap: 20px;
+
+  &.linear-flow {
+    display: block;
+    .column {
+      flex: 100%;
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
 }
 
-/* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
-  padding: 16px;
+  padding: 8px 12px;
+}
+
+.experience-col {
+  flex: 55%;
+}
+
+.skills-col {
+  flex: 45%;
 }
 
 .reg-padding {
@@ -98,18 +235,24 @@
 }
 
 .reg-spacing {
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 ::ng-deep .mat-card-header .mat-card-title {
-  margin-bottom: 10px !important;
+  margin-bottom: 6px !important;
 }
 
 .user-title {
-  margin-top: 16px;
+  margin-top: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  .user-name {
+    color: #0f172a;
+  }
 
   .profile-button {
     position: relative;
@@ -151,5 +294,28 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 16px;
+}
+
+.footer-url {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+  .row {
+    display: block;
+    .column {
+      flex: 100%;
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

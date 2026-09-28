@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ui-guy-resume.netlify.app/sitemap.xml

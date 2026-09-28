@@ -1,15 +1,26 @@
-<mat-card-title class="skill-title">{{skill.name}}</mat-card-title>
+<h3 class="skill-title">
+    <mat-icon class="skill-category-icon noprint" *ngIf="skill.icon">{{skill.icon}}</mat-icon>
+    <span>{{skill.name}}</span>
+</h3>
 <mat-chip-list cdkDropList cdkDropListOrientation="vertical" (cdkDropListDropped)="drop($event)" aria-label="Skills">
     <mat-chip cdkDrag *ngFor="let element of skill.content" [matMenuTriggerFor]="addmenu" #addMenu="matMenuTrigger"
-        [matMenuTriggerData]="{element:element}">
-        <mat-chip-avatar>
-            <img *ngIf="!element.score" class="skill-image" src="{{element.logoUrl}}" alt="{{element.name}}" />
-            <mat-progress-spinner *ngIf="element.score" matBadge="{{element.score}}" matBadgeSize="small"
-                matBadgeColor="accent" matTooltip="Score: {{element.score}}" matTooltipShowDelay="1000"
-                [value]="element.score" [diameter]="28" [strokeWidth]="4" (mouseenter)="changeColor()">
+        [matMenuTriggerData]="{element:element}" class="skill-chip">
+        <mat-chip-avatar *ngIf="element.logoUrl">
+            <img class="skill-image" [src]="element.logoUrl" [alt]="element.name" />
+        </mat-chip-avatar>
+        <mat-chip-avatar *ngIf="element.score">
+            <mat-progress-spinner matBadge="{{element.score}}" matBadgeSize="small"
+                matBadgeColor="accent" matTooltip="Proficiency: {{element.score}}%" matTooltipShowDelay="500"
+                [value]="element.score" [diameter]="24" [strokeWidth]="3" (mouseenter)="changeColor()">
             </mat-progress-spinner>
         </mat-chip-avatar>
-        {{element.name}}
+        <span class="skill-name">{{element.name}}</span>
+        <span class="skill-keywords-inline noprint" *ngIf="element.keywords && element.keywords.length">
+            · {{element.keywords.slice(0, 2).join(', ')}}
+        </span>
+        <span class="skill-keywords-print" *ngIf="element.keywords && element.keywords.length">
+            — {{element.keywords.join(', ')}}
+        </span>
     </mat-chip>
     <mat-chip class="noprint" *ngIf="editmode" [matMenuTriggerFor]="addmenu" #addMenu="matMenuTrigger">
         <mat-icon>add</mat-icon>

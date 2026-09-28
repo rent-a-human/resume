@@ -1,0 +1,217 @@
+{
+  "total_conversations": 206,
+  "total_documents_analyzed": 205,
+  "total_custom_skills": 9,
+  "domain_distribution": {
+    "Frontend & Rich Client Architecture": 162,
+    "Fintech & Integrations": 141,
+    "Quality Engineering & Governance": 109,
+    "Enterprise Backend & Monorepos": 68,
+    "AI & Autonomous Systems": 33,
+    "Native, Mobile & Systems": 13,
+    "Spatial Computing & Computer Vision": 13,
+    "CleanTech & Mechanical Engineering": 5
+  },
+  "top_keywords": {
+    "Gravity": 1545,
+    "Java": 581,
+    "Angular": 132,
+    "Jspreadsheet": 112,
+    "React": 107,
+    "Code Review": 106,
+    "LESS": 95,
+    "TypeScript": 86,
+    "MCP": 82,
+    "Gemini": 72,
+    "CSS": 70,
+    "Android": 64,
+    "Patch Coverage": 56,
+    "CKEditor": 49,
+    "Wompi": 42,
+    "Capacitor": 36,
+    "Karma": 30,
+    "InDesign": 27,
+    "Claude": 27,
+    "Swift": 26,
+    "Testing": 25,
+    "SolarVerde": 25,
+    "Ollama": 24,
+    "YOLOE": 20,
+    "Nx": 19,
+    "JaCoCo": 18,
+    "Disclosure Studio": 18,
+    "JavaScript": 18,
+    "MediaPipe": 18,
+    "DevExtreme": 17,
+    "Quality Gate": 16,
+    "Monorepo": 16,
+    "Agent Neo": 16,
+    "macOS": 14,
+    "SonarQube": 14,
+    "PSE": 11,
+    "Stockfish": 11,
+    "Jasmine": 11,
+    "R3F": 10,
+    "Three.js": 10,
+    "Tailwind": 9,
+    "React Native": 9,
+    "Spring Boot": 9,
+    "Node.js": 8,
+    "RxJS": 7,
+    "Svelte": 7,
+    "Raycasting": 6,
+    "iOS": 5,
+    "YOLO": 5,
+    "Model Context Protocol": 5
+  },
+  "sample_contexts": {
+    "Gravity": [
+      "AS` array: - **Era 7: THE SINGULARITY** (Threshold: 2450) - Gravity Flip - **Era 8: THE CHRONO MATRIX** (Threshold: 3250) - Chrono Shift (Slow motion) + Gravity",
+      "on Error - [PreviewComponent.java](file:///Users/usuario1/D/gravity/DisclosureStudio/apps/reporting-be/reporting/src/main/java/com/gravity/reporting/component/P",
+      "ution in `dist/agent-neo`. 3.  **Linked in Host**: Updated `gravity-reporting-next-ui/package.json` to point `agent-neo` dependency to `file:../agent-neo-angula"
+    ],
+    "Java": [
+      "ues: 1. **CI Build Compilation Failure in `PreviewComponent.java`**: Resolving private field access compiler errors (`note.id` and `note.content` in `TableNote`",
+      "he transient `resolvedContent` field from `TableNote` (both Java backend and Angular TypeScript interfaces).    - In `PreviewComponent.stripMdfmHtmlCellValues`,",
+      "ge DTO & Projection**:   - Created [`ReportVariableUsageDTO.java`](file:///Users/usuario1/D/gravity/DisclosureStudio/apps/reporting-be/reporting/src/main/java/c"
+    ],
+    "Swift": [
+      "tes.json` file.  ## Verification  ### Automated Tests - The Swift compiler compiled the new `RichTextEditor.swift` wrapper without issues. - Type integrity was",
+      "ering - Updated `TranscriptLineRow` in [`LiveTranscriptView.swift`](file:///Users/usuario1/D/gravity/nuevos/pilot_hud/PilotHUD/Views/Audio/LiveTranscriptView.sw",
+      "### 1. Data Models & Persistence  #### [MODIFY] [NoteModel.swift](file:///Users/usuario1/D/vibe-code-projects/note-tabs/NoteModel.swift) - **Changes**:   - Add"
+    ],
+    "SwiftUI": [
+      "dismantled the default macOS `TabView` and crafted a custom SwiftUI `VStack -> HStack` architecture. Tabs are now strictly left-aligned and feature a constraine",
+      "e-projects/note-tabs/RichTextEditor.swift) - **Purpose**: A SwiftUI wrapper for macOS's built-in robust `NSTextView`. - **Features**:   - `NSViewRepresentable`",
+      "Mobile & Cross-Platform**: Capacitor (iOS/Android), Swift / SwiftUI (AppKit/macOS), React Native.   - **Updated Work Experiences**:     - **Gravity / ClearGov ("
+    ],
+    "macOS": [
+      "## Completed Work  We have successfully expanded the native macOS notes application to support Rich Text and a customized tab interface!  1. **Custom Tab Bar La",
+      "Because the `api-llm` backend runs unrestricted natively on macOS, we engineered explicit runtime safeguards in the Node runtime itself to sandbox the Agent's I",
+      "# Plan: NoteTabs Native macOS App - Rich Text & Custom Tabs  We will expand our native macOS app to support rich text docume"
+    ],
+    "Angular": [
+      "# Porting Agent Features to Angular  I have ported the core agent features from the React-based `agent-neo` to the Angular-based",
+      "olvedContent` field from `TableNote` (both Java backend and Angular TypeScript interfaces).    - In `PreviewComponent.stripMdfmHtmlCellValues`, updated note con",
+      "---  ## Verification Results  - **TypeScript Compilation & Angular Bundling**:   - Both unit test specs and production build passed TypeScript checking and bun"
+    ],
+    "React": [
+      "to Angular  I have ported the core agent features from the React-based `agent-neo` to the Angular-based `agent-neo-angular` (agent-nexus) library to resolve de",
+      "n `main.tsx` to handle relative Vite paths (`./`), ensuring React Router matches the root URL on mobile. - **Dual-Environment Support**: Updated `vite.config.ts",
+      "interface to broadcast YOLO classes and status info to the React frontend. - **`index.ts`**:   - Registered handlers for the `set_yolo_classes` socket command."
+    ],
+    "CSS": [
+      "ewarded video ad before providing a strategic move. - Fixed CSS to handle **mobile safe areas** (notches, home bars). - **Crash Fix**: Added the required `GADAp",
+      "ew/blocks/table-notes-preview.less` to eliminate duplicated CSS across `mdfm.component.less`, `excel.component.less`, and `import-preview.component.less`.  7. *",
+      "plemented a `markerToElement` builder that generates custom CSS-injected `<span>` dom elements simulating colored visual cursors and username 'flags' hovering d"
+    ],
+    "Capacitor": [
+      "nimation\u2014very slow and subtle.  ### 3. Mobile Web Wrapping (Capacitor) - Initialized **Capacitor** in the `chess-3d` project. - Added **Android** and **iOS** na",
+      "# Walkthrough: Running iDoctor on Android with Capacitor  We have configured **Capacitor** to package the iDoctor React/Vite application into a nat",
+      "We will wrap the existing Chess 3D web application using **Capacitor**. This allows us to keep 100% of the current React + Three.js + Agent-Neo stack while dep"
+    ],
+    "iOS": [
+      "itor** in the `chess-3d` project. - Added **Android** and **iOS** native platforms. - Configured app ID `com.borischess.app` and app name `Grandmaster 3D`. - Ad",
+      "rrent React + Three.js + Agent-Neo stack while deploying to iOS and Android.  ## User Review Required  > [!IMPORTANT] > To publish to the App Store and Google P",
+      "nufacturing.     7. **Mobile & Cross-Platform**: Capacitor (iOS/Android), Swift / SwiftUI (AppKit/macOS), React Native.   - **Updated Work Experiences**:     -"
+    ],
+    "Android": [
+      "tialized **Capacitor** in the `chess-3d` project. - Added **Android** and **iOS** native platforms. - Configured app ID `com.borischess.app` and app name `Grand",
+      "gent` to detect common TV platforms (Tizen, WebOS, AppleTV, Android TV, Hisense, Vidaa, Linux ARM, Chromecast, etc.). - When detected, the `useStore` automatica",
+      "# Walkthrough: Running iDoctor on Android with Capacitor  We have configured **Capacitor** to package the iDoctor React/Vite applicati"
+    ],
+    "Gemini": [
+      "en activities.  ![Chess Strategy WebPanel](/Users/usuario1/.gemini/antigravity/brain/8fea9419-a02b-42af-b56a-f587aec731bf/media__1771637039510.png)  ## 2D Setti",
+      "rding:** ![Connecting Rod 3D Verification](/Users/usuario1/.gemini/antigravity/brain/3e7c2751-f7a5-49d5-b00f-c770b23d31d4/verify_connecting_rod_fix_177332662150",
+      "s until it succeeds: 1. **Grok** API (`grok-4-latest`) 2. **Gemini** API (`gemini-2.5-flash`) via OpenAI Compatibility REST layer. 3. **OpenAI** API 4. **Claude"
+    ],
+    "Tailwind": [
+      "ed to exact absolute coordinates (`2rem` offset) instead of Tailwind classes to prevent older TV Webkit engines from failing to parse newer grid constraints.  #",
+      "olish - **HUD Overlay**: A cinematic HTML/CSS overlay using Tailwind, featuring animated glowing text and system status indicators. - **Holograms**: 3D floating",
+      "re, activeObject } \u251c\u2500\u2500 styles/ \u2502   \u2514\u2500\u2500 index.css          # Tailwind & Custom CSS variables \u251c\u2500\u2500 types/ \u2502   \u2514\u2500\u2500 index.ts           # Shared interfaces \u251c\u2500\u2500 utils/"
+    ],
+    "R3F": [
+      "nto a `-1` to `+1` 3D projection cartesian matrix, matching R3F standard raycasting inputs exactly. - This creates perfect intersection parity. Anything the vir",
+      "landmarks on top of the webcam feed.  ### 2. The 3D World (R3F) - **Scene Setup**: A dark, atmospheric 3D environment with a cyber-grid floor. - **3D Cursor**:",
+      "odels, sounds) \u251c\u2500\u2500 components/ \u2502   \u251c\u2500\u2500 canvas/            # R3F 3D Components \u2502   \u2502   \u251c\u2500\u2500 Scene.tsx      # Main Entry for Canvas \u2502   \u2502   \u251c\u2500\u2500 HUD.tsx        # 3D"
+    ],
+    "Raycasting": [
+      "s exactly to the Arrow keys.  ### 3D Spatial Intersection & Raycasting - Re-architected `useHandRaycaster.tsx` to process the custom `tvCursor` X/Y coordinates",
+      "that signature neon \"glow\".  ### 3. Interaction System - **Raycasting**: Custom logic maps 2D hand coordinates to the 3D scene using `useHandRaycaster`. - **Ge",
+      "rks to 'Pinch', 'Swipe' \u2502   \u2514\u2500\u2500 useRaycaster.ts    # Custom raycasting logic from hand coords \u251c\u2500\u2500 store/ \u2502   \u2514\u2500\u2500 useStore.ts        # Zustand: { handPos, gestur"
+    ],
+    "Node.js": [
+      "coordinates to percentages, and sends detection data to the Node.js backend.  ---  ### 4. Frontend UI Components - **`DetectionOverlay.tsx`**:   - Added the `al",
+      "nd` mapped string. 2. **Node Execution**: Bound the tool to Node.js's native `child_process.exec`, capturing and returning formatted `STDOUT` and `STDERR` direc",
+      "mes** app, and the **Browser** app, you must use the custom Node.js server.  ### Setup & Run 1.  Open a terminal in the `webos` directory. 2.  Install dependenc"
+    ],
+    "YOLO": [
+      "`**:   - Updated the `TelemetryData` interface to broadcast YOLO classes and status info to the React frontend. - **`index.ts`**:   - Registered handlers for th",
+      "gate/auto-gate/apps/server/src/vision_service.py) - Import `YOLO` from `ultralytics` (with standard YOLOv8n fallback if YOLOE weights fail to load, and mock fal"
+    ],
+    "YOLOE": [
+      "# Walkthrough - YOLOE Vision Recognition Integration  We have integrated the **YOLOE open-vocabulary object recognit",
+      "# Implementation Plan - YOLOE Vision Recognition  This plan details the integration of the YOLOE (You Only Look Once for Eve",
+      "R3F), MediaPipe (Hand Raycaster, Gaze/Eye tracking), WebXR, YOLOE vision integration, Stockfish WASM.   - **Quality & DevOps**: JaCoCo backend test coverage (MI"
+    ],
+    "TypeScript": [
+      "tent` field from `TableNote` (both Java backend and Angular TypeScript interfaces).    - In `PreviewComponent.stripMdfmHtmlCellValues`, updated note content dir",
+      "able.component.spec.ts).  ---  ## Verification Results  - **TypeScript Compilation & Angular Bundling**:   - Both unit test specs and production build passed Ty",
+      "ion Results  | Check | Result | Details | |---|---|---| | **TypeScript Compilation** | **0 errors** | `tsc -p tsconfig.app.json --noEmit` and `tsc -p tsconfig.s"
+    ],
+    "Jspreadsheet": [
+      "ed reading-order marker assignment on the frontend matching JSpreadsheet behavior.  ---  ## Verification Results  ### 1. Backend (Java / Maven) - Ran `./mvnw te",
+      "## Summary of Completed Work Reconstructed and ported the Jspreadsheet Pro formula shifting and translation workaround to the [DisclosureStudio](file:///Users",
+      "n `setCellLink` (completely eliminating `: any`). 4. **Real JSpreadsheet Integration Tests for Formula Recalculation**:    - Added real `jspreadsheet` integrati"
+    ],
+    "LESS": [
+      "ting/components/sections/preview/blocks/table-notes-preview.less` to eliminate duplicated CSS across `mdfm.component.less`, `excel.component.less`, and `import-",
+      "/section-fields.component.html) & [section-fields.component.less](file:///Users/usuario1/D/gravity/gravity-reporting-next-ui/src/app/reporting/components/sectio",
+      "variable-picker/cell-variable-picker.component.html)      - LESS style file: [cell-variable-picker.component.less](file:///Users/usuario1/D/gravity/gravity-repo"
+    ],
+    "JaCoCo": [
+      "185/230 lines covered, passing `MIN_PATCH=70`).   - **Java (jacoco)**: **72.2%** (78/108 lines).   - **reporting-ui (lcov)**: **87.7%** (107/122 lines).   - **E",
+      ".1% (6/26) | **100.0% (26/26)** | $\\ge 70\\%$ | | **Backend (JaCoCo)** | N/A (0/0) | N/A (0/0) | $\\ge 70\\%$ | | **Frontend (LCOV)** | 23.1% (6/26) | **100.0% (26",
+      "s   -----------------------------------------------   Java (jacoco)        89.6%             121/135   reporting-ui (lcov)  76.2%             364/478   ``` - Ex"
+    ],
+    "Karma": [
+      "- **Result**: `BUILD SUCCESS`.  ### 2. Frontend (Angular / Karma / TypeScript) - Ran `npx tsc --noEmit` in `apps/reporting-ui`:   - **Result**: 0 errors, clean",
+      "l TypeScript and Angular bindings validated). 2. **Frontend Karma Unit Tests**:    - `585 of 585 tests SUCCESS` (including newly created `content-blocks.compone",
+      "/tsconfig.spec.json --noEmit` -> **0 errors (clean)**  2. **Karma Unit Test Suites (Headless Chrome)**:    - `formula-autocomplete.component.spec.ts` -> **57 /"
+    ],
+    "Patch Coverage": [
+      "ssed.   - **Total**: 42 specs executed, 0 failures.  ### 3. Patch Coverage Quality Gate - Ran `BASE_REF=origin/dev MIN_PATCH=70 node scripts/ci/patch-coverage.c",
+      "llbacks.spec.ts` ran in `ChromeHeadlessNoSandbox`. | | **CI Patch Coverage Gate** | **94.5%** | **120/127** added instrumented lines covered (required: $\\ge 70\\",
+      ": 123/123 tests passed (`Executed 123 of 123 SUCCESS`). - **Patch Coverage Quality Gate**:   - `BASE_REF=origin/dev MIN_PATCH=70`   - **Result: 100.0% patch cov"
+    ],
+    "Quality Gate": [
+      "al**: 42 specs executed, 0 failures.  ### 3. Patch Coverage Quality Gate - Ran `BASE_REF=origin/dev MIN_PATCH=70 node scripts/ci/patch-coverage.cjs`:   - **Over",
+      "passed (`Executed 123 of 123 SUCCESS`). - **Patch Coverage Quality Gate**:   - `BASE_REF=origin/dev MIN_PATCH=70`   - **Result: 100.0% patch coverage (107/107",
+      "109 / 109 SUCCESS** (100% pass rate)  ### CI Patch Coverage Quality Gate ```bash BASE_REF=origin/dev MIN_PATCH=70 node scripts/ci/patch-coverage.cjs ``` - **Res"
+    ],
+    "Testing": [
+      "with `getBoundingClientRect()`, which ensures accurate hit testing even with complex layouts or scrolling.  ## Verification Results  ### Manual Verification  T",
+      ".ts) - Added `real JSpreadsheet integration` describe block testing cell edit preservation and undo/redo across `reevaluateWorksheetFormulas` and `recalculateWo",
+      "-  ## \ud83e\udd16 Automated End-to-End Test  We added an automated UI testing script using Puppeteer to let you visually see the shopping workflow step-by-step. Run the f"
+    ],
+    "CKEditor": [
+      "cursor feature has been successfully implemented across the CKEditor 5 instances, using your existing Azure Web PubSub real-time infrastructure.  ## Real-Time E",
+      "`startEdit(noteId)`, passed raw `note.content` directly to CKEditor so variable widgets render dynamically as interactive pills. - In `saveNote()` and `deleteN",
+      "he child component instance alive, which prevents premature CKEditor destruction and ensures blur/change events fire normally.  #### [section-fields.component.t"
+    ],
+    "PostgreSQL": [
+      "es`, the raw XML/HTML markup was permanently overwritten in PostgreSQL with stripped/evaluated plain text (e.g., `One $69,507,383 plus [table cell]`), permanent",
+      "were erased from `_criteria` and saved as static strings in PostgreSQL. 3. **Editor & Dynamic Resolution**: `TableNotesComponent` loads `note.content` into CKEd",
+      "-Text & Snippet Generator (<mark>)\"]   end    subgraph DB [\"PostgreSQL\"]     BlocksTable[\"blocks (add column name)\"]     SectionsTable[\"sections\"]     Paragraph"
+    ],
+    "SolarVerde": [
+      "locked state is persisted using `localStorage` keys:     - `solarverde-calculator-unlocked`: `'true'`     - `solarverde-user-email`: customer's email address",
+      "roadmap  We will replace the current mock payment system in SolarVerde with a production-ready Wompi PSE integration. This roadmap covers the end-to-end integra",
+      "nd physical/systems engineering (BS Mechanical Engineering, SolarVerde CREG 174 regulatory approval). Please review whether this title and focus match your targ"
+    ],
+    "Wompi": [
+      "# Walkthrough: Wompi & PSE Web Checkout Integration  We have replaced the simulated mock payment system with a prod",
+      "# Implementation Plan: Wompi payment integration roadmap  We will replace the current mock payment system in SolarVerde wit"
+    ]
+  }
+}

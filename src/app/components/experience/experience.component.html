@@ -1,5 +1,5 @@
-<mat-card-header>
-    <img mat-card-avatar class="exp-image" [src]="experience[0].value" />
+<mat-card-header class="exp-card-header">
+    <img mat-card-avatar class="exp-image" [src]="experience[0].value" [alt]="experience[1].value" />
     <mat-card-title class="exp-title">{{experience[1].value}}
         <div class="noprint">
             <button mat-icon-button *ngIf="editmode" class="mat-elevation-z8" [matMenuTriggerFor]="editmenu"
@@ -8,8 +8,12 @@
             </button>
         </div>
     </mat-card-title>
-    <mat-card-subtitle>{{experience[3].value}} {{experience[2].value}}</mat-card-subtitle>
-    <mat-card-subtitle>
+    <mat-card-subtitle class="exp-role-period">
+        <span class="exp-position">{{experience[3].value}}</span>
+        <span class="exp-divider"> · </span>
+        <span class="exp-period">{{experience[2].value}}</span>
+    </mat-card-subtitle>
+    <mat-card-subtitle class="exp-achievements">
     <ul>
         <ng-container *ngFor="let str of splittedExperience">
         <li *ngIf="str !== '' ">{{str}}</li>

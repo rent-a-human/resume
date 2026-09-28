@@ -1,25 +1,65 @@
-.exp-image {
-    background-size: cover;
-  }
-
-  .exp-title {
-    font-size: larger;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    .mat-icon-button {
-      background-color: aliceblue;
-      height: 30px;
-      width: 30px;
-      vertical-align: unset;
-      line-height: 20px;
-    }
-    .mat-icon {
-      font-size: large;
-    }
+.exp-card-header {
+  padding-bottom: 8px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
-  .mat-card-avatar {
-    width: 60px;
-    height: 60px;
+.exp-image {
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.exp-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #1a202c;
+  .mat-icon-button {
+    background-color: aliceblue;
+    height: 30px;
+    width: 30px;
+    vertical-align: unset;
+    line-height: 20px;
+    margin-left: 8px;
   }
+  .mat-icon {
+    font-size: large;
+  }
+}
+
+.exp-role-period {
+  font-size: 0.95rem;
+  margin-top: 2px !important;
+  margin-bottom: 6px !important;
+  color: #2c5282;
+
+  .exp-position {
+    font-weight: 500;
+  }
+  .exp-divider {
+    color: #a0aec0;
+  }
+  .exp-period {
+    color: #4a5568;
+    font-style: italic;
+  }
+}
+
+.exp-achievements {
+  ul {
+    margin: 4px 0 12px 18px;
+    padding: 0;
+    li {
+      margin-bottom: 6px;
+      line-height: 1.45;
+      color: #2d3748;
+    }
+  }
+}
+
+.mat-card-avatar {
+  width: 52px;
+  height: 52px;
+}
