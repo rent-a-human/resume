@@ -41,7 +41,7 @@ export const RESUME_DATA: ResumeProfile = {
     { field: "Profession", value: "Staff Software Engineer · Enterprise Full-Stack & Agentic Systems · BS Mechanical Engineering" },
     { 
       field: "Presentation", 
-      value: "Staff Software Engineer with 15+ years of experience delivering enterprise-grade platforms, autonomous AI systems, and high-performance full-stack architectures. Proven track record leading development teams through major engineering transformations: migrating legacy enterprise monoliths to Angular 14+ and Nx monorepos, architecting Java 17 / Spring Boot microservices, and pioneering agentic AI frameworks (author of Agent Neo Web Component, Model Context Protocol MCP servers, and local Ollama orchestration). Author of real-time 3D spatial computing interfaces with Three.js and MediaPipe computer vision. Rare hybrid engineering foundation combining computer science with a BS in Mechanical Engineering, CREG 174 clean energy regulatory approval, and rigorous engineering governance across JaCoCo patch coverage gates, Karma testing, and adversarial pre-PR reviews."
+      value: "Staff Software Engineer with 15+ years of experience delivering enterprise-grade platforms, autonomous AI systems, and high-performance full-stack architectures. Proven track record leading development teams through major engineering transformations: migrating legacy enterprise monoliths to Angular 14+ and Nx monorepos, architecting Java 17 / Spring Boot microservices, and pioneering agentic AI frameworks (author of Agent Neo Web Component, PilotHUD native macOS real-time AI co-pilot, Model Context Protocol MCP servers, and local Ollama orchestration). Author of real-time 3D spatial computing interfaces with Three.js and MediaPipe computer vision. Rare hybrid engineering foundation combining computer science with a BS in Mechanical Engineering, CREG 174 clean energy regulatory approval, and rigorous engineering governance across JaCoCo patch coverage gates, Karma testing, and adversarial pre-PR reviews."
     }
   ],
   email: "johnleninortiz@gmail.com",
@@ -77,7 +77,7 @@ export const RESUME_DATA: ResumeProfile = {
       { field: "Position", value: "Founder · AI Systems Architect & Open Source Creator" },
       { 
         field: "Achievements", 
-        value: "Designed and built an open-source, multi-tier AI ecosystem from scratch. Agent Neo: Authored a framework-agnostic conversational AI library distributed as a Web Component (compatible with React, Angular, and Vanilla JS) supporting deterministic decision trees, skipIf conditions, multi-turn LLM dialogue, and automated tool calling. api-llm: Built an LLM orchestration backend with dual-tier inference routing (Claude 3.5, Gemini 2.0, and local Ollama), featuring a native Model Context Protocol (MCP) server exposing filesystem, web search, and OpenJSCAD parametric CAD tools to autonomous agent loops. jarvis-dashboard: Engineered an Iron Man-inspired 3D holographic command center with React Three Fiber and MediaPipe computer vision, featuring touchless 3D raycasting, eye/gaze tracking, multi-step agent workflows, and digital PDF signing. chess-3d: Created a 3D chess game integrating Stockfish WASM engine (levels 1-7), Agent Neo AI persona tracking board state, and Capacitor packaging for mobile iOS and Android."
+        value: "Designed and built an open-source, multi-tier AI ecosystem from scratch. PilotHUD: Engineered a native macOS real-time AI Co-Pilot HUD in Swift and SwiftUI, featuring floating NSPanel overlays (ultra-compact, pill, expanded), global hotkey monitoring, live audio transcription, screen capture observation engines, and proactive LLM suggestions. Agent Neo: Authored a framework-agnostic conversational AI library distributed as a Web Component (compatible with React, Angular, and Vanilla JS) supporting deterministic decision trees, skipIf conditions, multi-turn LLM dialogue, and automated tool calling. api-llm: Built an LLM orchestration backend with dual-tier inference routing (Claude 3.5, Gemini 2.0, and local Ollama), featuring a native Model Context Protocol (MCP) server exposing filesystem, web search, and OpenJSCAD parametric CAD tools to autonomous agent loops. jarvis-dashboard: Engineered an Iron Man-inspired 3D holographic command center with React Three Fiber and MediaPipe computer vision, featuring touchless 3D raycasting, eye/gaze tracking, multi-step agent workflows, and digital PDF signing. chess-3d: Created a 3D chess game integrating Stockfish WASM engine (levels 1-7), Agent Neo AI persona tracking board state, and Capacitor packaging for mobile iOS and Android."
       }
     ],
     [
@@ -144,6 +144,7 @@ export const RESUME_DATA: ResumeProfile = {
       type: "score",
       content: [
         { name: "Agent Neo (Creator / Author)", score: 96, keywords: ["Web Component", "Autonomous Agents", "Decision Trees", "Tool Calling"] },
+        { name: "PilotHUD (Real-Time AI Co-Pilot)", score: 94, keywords: ["macOS Native", "Live Audio Transcription", "Screen Vision Capture", "Floating HUD", "Proactive AI Suggestions"] },
         { name: "Model Context Protocol (MCP SDK)", score: 94, keywords: ["Tool Integration", "Filesystem", "Search", "Agentic Pipelines"] },
         { name: "LLM Orchestration & Pipelines", score: 92, keywords: ["Multi-turn", "Structured Outputs", "Prompt Engineering"] },
         { name: "Local LLM Inference (Ollama)", score: 90, keywords: ["Llama 3", "DeepSeek", "Local Inference", "Privacy-first AI"] },
@@ -222,7 +223,7 @@ export const RESUME_DATA: ResumeProfile = {
       icon: "build",
       type: "image",
       content: [
-        { name: "Swift & SwiftUI (macOS AppKit)", logoUrl: "https://developer.apple.com/assets/elements/icons/swift/swift-96x96_2x.png", keywords: ["NSTextView", "macOS Native", "RTF"] },
+        { name: "Swift & SwiftUI (PilotHUD / macOS)", logoUrl: "https://developer.apple.com/assets/elements/icons/swift/swift-96x96_2x.png", keywords: ["PilotHUD", "NSPanel", "AppKit", "Audio/Screen Observation", "RTF"] },
         { name: "Capacitor (iOS & Android)", logoUrl: "https://capacitorjs.com/assets/img/meta/favicon.png", keywords: ["Mobile Packaging", "Plugins"] },
         { name: "GIT", logoUrl: "assets/icons/git.svg" },
         { name: "VS Code", logoUrl: "assets/icons/vscode.svg" },

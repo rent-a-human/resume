@@ -30,7 +30,7 @@ export class MainCardComponent implements OnInit {
   }
 
   loadUserData() {
-    const userData = typeof localStorage !== 'undefined' ? localStorage.getItem('user-data-v2') : null;
+    const userData = typeof localStorage !== 'undefined' ? localStorage.getItem('user-data-v3') : null;
     if (userData) {
       try {
         this.user = JSON.parse(userData);
@@ -49,7 +49,7 @@ export class MainCardComponent implements OnInit {
 
   saveData() {
     if (typeof localStorage !== 'undefined') {
-      localStorage.setItem('user-data-v2', JSON.stringify(this.user));
+      localStorage.setItem('user-data-v3', JSON.stringify(this.user));
     }
   }
 
